@@ -1,5 +1,4 @@
 const { test, expect } = require('../../utils/fixtures');
-test.describe.configure({ mode: 'serial' });
 test.describe('UnoPim Category Field', () => {
 test('Create category field with empty Code', async ({ adminPage }) => {
   await adminPage.getByRole('link', { name: ' Catalog' }).click();
