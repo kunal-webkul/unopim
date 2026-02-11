@@ -6,25 +6,39 @@ const STORAGE_STATE = path.resolve(__dirname, '.state/admin-auth.json');
 module.exports = defineConfig({
   testDir: './tests',
 
-  fullyParallel: true,
+  // Run test files in parallel (safe for DB-based apps)
+  fullyParallel: false,
+
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
 
-  // CI optimization
-  workers: process.env.CI ? 2 : 4,
+  // GitHub runner has 2 cores
+  workers: process.env.CI ? 2 : undefined,
 
-  reporter: [['html', { outputFolder: 'playwright-report' }]],
+  timeout: 60 * 1000,
+  expect: {
+    timeout: 10 * 1000,
+  },
+
+  reporter: process.env.CI
+    ? [['dot'], ['html', { outputFolder: 'playwright-report', open: 'never' }]]
+    : [['list'], ['html', { outputFolder: 'playwright-report' }]],
 
   globalSetup: require.resolve('./global-setup.js'),
 
   use: {
-    baseURL: 'http://127.0.0.1:8000',
+    baseURL: process.env.UNOPIM_URL || 'http://127.0.0.1:8000',
+
     storageState: STORAGE_STATE,
 
+    // 🚀 Speed optimizations
+    headless: true,
     screenshot: 'only-on-failure',
-
-    trace: process.env.CI ? 'retain-on-failure' : 'on-first-retry',
     video: process.env.CI ? 'off' : 'retain-on-failure',
+    trace: process.env.CI ? 'retain-on-failure' : 'on-first-retry',
+
+    actionTimeout: 0,
+    navigationTimeout: 30 * 1000,
 
     ...devices['Desktop Chrome'],
   },
