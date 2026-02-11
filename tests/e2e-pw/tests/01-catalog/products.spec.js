@@ -1,5 +1,5 @@
 const { test, expect } = require('../../utils/fixtures');
-
+test.describe.configure({ mode: 'serial' });
 test.describe('UnoPim  Create Product Test cases', () => {
 test('with empty product type field', async ({ adminPage }) => {
   await adminPage.getByRole('link', { name: ' Catalog' }).click();
