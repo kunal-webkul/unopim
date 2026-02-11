@@ -5,7 +5,7 @@ const password = 'admin123';
 const invalidEmail = 'admin123@example.com';
 const invalidPassword = 'admintest';
 
-
+test.describe.configure({ mode: 'serial' });
 test.describe('Login adminPage', () => {
 test('Logout Check', async ({ adminPage }) => {
   await adminPage.click('button.rounded-full');
