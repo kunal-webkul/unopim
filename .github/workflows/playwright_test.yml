@@ -2,18 +2,18 @@ name: Playwright Tests
 
 on: [push, pull_request]
 
-
 permissions:
   contents: read
 
 jobs:
   playwright_tests:
-    name: Playwright End-to-end UI Test
-    runs-on: ${{ matrix.operating-systems }}
+    name: Playwright UI Test (Shard ${{ matrix.shard }})
+    runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
-        operating-systems: [ubuntu-latest]
+        shard: [1/2, 2/2]   # 🔥 2 parallel jobs
         php-versions: ['8.2']
 
     services:
@@ -33,73 +33,62 @@ jobs:
     env:
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       GROQ_INVALID_KEY: ${{ secrets.GROQ_INVALID_KEY }}
-      UNOPIM_URL: ${{ secrets.UNOPIM_URL }}
+      UNOPIM_URL: http://localhost:8000
       ADMIN_USERNAME: ${{ secrets.ADMIN_USERNAME }}
       ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
-      INVALID_ADMIN_EMAIL: ${{ secrets.INVALID_ADMIN_EMAIL }}
-      INVALID_ADMIN_PASSWORD: ${{ secrets.INVALID_ADMIN_PASSWORD }}
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+      - uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-versions }}
           extensions: curl, fileinfo, gd, intl, mbstring, openssl, pdo, pdo_mysql, tokenizer, zip
-          ini-values: error_reporting=E_ALL
           tools: composer:v2
 
-      - name: Running Composer Install
-        run: composer install
+      - name: Install PHP dependencies
+        run: composer install --no-interaction --prefer-dist
 
-      - name: Setting Environment
+      - name: Setup Environment
         run: |
           cp .env.example .env
-          sed -i "s|^\(APP_ENV=\s*\).*$|\1testing|" .env
-          sed -i "s|^\(DB_HOST=\s*\).*$|\1127.0.0.1|" .env
-          sed -i "s|^\(DB_PORT=\s*\).*$|\1${{ job.services.mysql.ports['3306'] }}|" .env
-          sed -i "s|^\(DB_DATABASE=\s*\).*$|\1unopim|" .env
-          sed -i "s|^\(DB_USERNAME=\s*\).*$|\1root|" .env
-          sed -i "s|^\(DB_PASSWORD=\s*\).*$|\1root|" .env
-          cat .env
+          sed -i "s|APP_ENV=.*|APP_ENV=testing|" .env
+          sed -i "s|DB_HOST=.*|DB_HOST=127.0.0.1|" .env
+          sed -i "s|DB_PORT=.*|DB_PORT=${{ job.services.mysql.ports['3306'] }}|" .env
+          sed -i "s|DB_DATABASE=.*|DB_DATABASE=unopim|" .env
+          sed -i "s|DB_USERNAME=.*|DB_USERNAME=root|" .env
+          sed -i "s|DB_PASSWORD=.*|DB_PASSWORD=root|" .env
 
-      - name: Running UnoPim Installer
+      - name: Install UnoPim
         run: |
           php artisan unopim:install --skip-env-check --skip-admin-creation
-          php artisan migrate --force
           php artisan migrate:fresh --seed
           php artisan serve --host=0.0.0.0 --port=8000 &
 
-      - name: Wait for UnoPim to start
+      - name: Wait for App
         run: npx wait-on http://localhost:8000
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: 18
 
-      - name: Install Playwright dependencies
+      - name: Install Playwright
         run: |
           cd tests/e2e-pw
-          npm install
-          npx playwright install-deps chromium
-          npx playwright install chromium
+          npm ci
+          npx playwright install --with-deps chromium
 
       - name: Start Queue Worker
         run: php artisan queue:work &
 
-      - name: Run Playwright tests
-        if: ${{ success() }}
+      - name: Run Playwright Tests (Sharded)
         run: |
           cd tests/e2e-pw
-          npx playwright test --reporter=list
+          npx playwright test --shard=${{ matrix.shard }} --workers=2
 
-      - name: Upload Playwright report
+      - name: Upload Playwright Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-report
+          name: playwright-report-${{ matrix.shard }}
           path: tests/e2e-pw/playwright-report
-
