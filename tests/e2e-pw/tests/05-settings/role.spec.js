@@ -1,5 +1,4 @@
 const { test, expect } = require('../../utils/fixtures');
-test.describe.configure({ mode: 'serial' });
 test.describe('UnoPim Test cases(Administrator Role)', () => {
 test('Create role with empty permission field', async ({ adminPage }) => {
   await adminPage.getByRole('link', { name: ' Settings' }).click();
