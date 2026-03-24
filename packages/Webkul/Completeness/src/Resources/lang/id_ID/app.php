@@ -15,8 +15,8 @@ return [
                 'completeness' => [
                     'update-success'      => 'Kelengkapan berhasil diperbarui',
                     'title'               => 'Kelengkapan',
-                    'configure'           => 'Konfigurasi Kelengkapan',
-                    'channel-required'    => 'Diperlukan di Saluran',
+                    'configure'           => 'Konfigurasi kelengkapan',
+                    'channel-required'    => 'Diperlukan di saluran',
                     'save-btn'            => 'Simpan',
                     'back-btn'            => 'Kembali',
                     'mass-update-success' => 'Kelengkapan berhasil diperbarui',
@@ -24,10 +24,10 @@ return [
                     'datagrid' => [
                         'code'             => 'Kode',
                         'name'             => 'Nama',
-                        'channel-required' => 'Diperlukan di Saluran',
+                        'channel-required' => 'Diperlukan di saluran',
 
                         'actions' => [
-                            'change-requirement' => 'Ubah Persyaratan Kelengkapan',
+                            'change-requirement' => 'Ubah persyaratan kelengkapan',
                         ],
                     ],
                 ],
@@ -37,7 +37,7 @@ return [
         'products' => [
             'index' => [
                 'datagrid' => [
-                    'missing-completeness-setting' => 'Tidak ada pengaturan',
+                    'missing-completeness-setting' => 'N/A',
                     'completeness'                 => 'Lengkap',
                 ],
             ],
@@ -53,16 +53,27 @@ return [
         ],
     ],
 
+    'notifications' => [
+        'completeness-title'             => 'Perhitungan kelengkapan selesai',
+        'completeness-calculated'        => 'Kelengkapan dihitung untuk :count produk.',
+        'completeness-calculated-family' => 'Kelengkapan dihitung untuk :count produk dalam keluarga ":family".',
+        'email-subject'                  => 'Perhitungan kelengkapan selesai',
+        'email-greeting'                 => 'Halo,',
+        'email-body'                     => 'Perhitungan kelengkapan telah selesai untuk :count produk.',
+        'email-body-family'              => 'Perhitungan kelengkapan telah selesai untuk :count produk dalam keluarga atribut ":family".',
+        'email-footer'                   => 'Anda dapat melihat detail kelengkapan di dasbor Anda.',
+    ],
+
     'dashboard' => [
         'index' => [
             'completeness' => [
                 'calculated-products' => 'Produk yang dihitung',
 
                 'suggestion' => [
-                    'low'     => 'Kelengkapan rendah — tambahkan detail untuk meningkatkan.',
-                    'medium'  => 'Lanjutkan, terus tambahkan informasi.',
+                    'low'     => 'Kelengkapan rendah, tambahkan detail untuk meningkatkan.',
+                    'medium'  => 'Terus lanjutkan, terus tambahkan informasi.',
                     'high'    => 'Hampir lengkap, hanya beberapa detail tersisa.',
-                    'perfect' => 'Informasi produk sepenuhnya lengkap.',
+                    'perfect' => 'Informasi produk sudah sepenuhnya lengkap.',
                 ],
             ],
         ],

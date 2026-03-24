@@ -9,13 +9,15 @@ module.exports = defineConfig({
   fullyParallel: false,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
-  workers: 1,
-  reporter: [
-    ['html', { outputFolder: 'playwright-report' }],
-  ],
+  workers: process.env.CI ? 1 : 1,
+  reporter: process.env.CI
+    ? [['list'], ['html', { outputFolder: 'playwright-report', open: 'never' }]]
+    : [['html', { outputFolder: 'playwright-report' }]],
+  timeout: 30_000,
+  expect: { timeout: 10_000 },
   globalSetup: require.resolve('./global-setup.js'),
   use: {
-    baseURL: 'http://127.0.0.1:8000',
+    baseURL: process.env.BASE_URL || 'http://127.0.0.1:8000',
     storageState: STORAGE_STATE,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',

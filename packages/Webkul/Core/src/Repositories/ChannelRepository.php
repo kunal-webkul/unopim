@@ -2,8 +2,10 @@
 
 namespace Webkul\Core\Repositories;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Event;
+use Webkul\Core\Contracts\Channel;
 use Webkul\Core\Eloquent\Repository;
 
 class ChannelRepository extends Repository
@@ -19,7 +21,7 @@ class ChannelRepository extends Repository
     /**
      * Create.
      *
-     * @return \Webkul\Core\Contracts\Channel
+     * @return Channel
      */
     public function create(array $data)
     {
@@ -57,10 +59,34 @@ class ChannelRepository extends Repository
      *
      * @param  int  $id
      * @param  string  $attribute
-     * @return \Webkul\Core\Contracts\Channel
+     * @return Channel
      */
     public function update(array $data, $id, $attribute = 'id')
     {
+        $model = $this->getModel();
+
+        foreach (core()->getAllActiveLocales() as $locale) {
+            $localeCode = $locale->code;
+
+            if (! isset($data[$localeCode])) {
+                continue;
+            }
+
+            $allEmpty = true;
+
+            foreach ($model->translatedAttributes as $field) {
+                if (! empty($data[$localeCode][$field])) {
+                    $allEmpty = false;
+
+                    break;
+                }
+            }
+
+            if ($allEmpty) {
+                unset($data[$localeCode]);
+            }
+        }
+
         $channel = parent::update($data, $id, $attribute);
 
         // Sync the Channel Locales
@@ -87,7 +113,7 @@ class ChannelRepository extends Repository
     /**
      * This function returns a query builder instance for further manipulation of the channel model.
      *
-     * @return \Illuminate\Database\Eloquent\Builder
+     * @return Builder
      */
     public function queryBuilder()
     {

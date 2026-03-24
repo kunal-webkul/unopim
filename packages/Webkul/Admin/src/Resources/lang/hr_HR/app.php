@@ -11,7 +11,6 @@ return [
             'powered-by'             => 'Pokreće :unopim,',
             'open-source-project-by' => 'Projekt otvorenog koda od :webkul.',
         ],
-
         'forget-password' => [
             'create' => [
                 'email'                  => 'Registrirana e-pošta',
@@ -26,7 +25,6 @@ return [
                 'open-source-project-by' => 'Projekt otvorenog koda od :webkul.',
             ],
         ],
-
         'reset-password' => [
             'back-link-title'        => 'Natrag na prijavu?',
             'confirm-password'       => 'Potvrdite lozinku',
@@ -38,7 +36,6 @@ return [
             'open-source-project-by' => 'Projekt otvorenog koda od :webkul.',
         ],
     ],
-
     'notifications' => [
         'description-text' => 'Popis svih obavijesti',
         'marked-success'   => 'Obavijest uspješno označena',
@@ -55,7 +52,6 @@ return [
             'processing' => 'Obrada u tijeku',
         ],
     ],
-
     'account' => [
         'edit' => [
             'back-btn'          => 'Natrag',
@@ -76,25 +72,90 @@ return [
             'user-timezone'     => 'Vremenska zona',
         ],
     ],
-
     'dashboard' => [
+        'invalid-type' => 'Nevaljan tip widgeta nadzorne ploče.',
+
         'index' => [
-            'title'            => 'Nadzorna ploča',
-            'user-info'        => 'Brzi pregled važnih podataka u vašem PIM-u',
-            'user-name'        => 'Pozdrav! :user_name',
-            'catalog-details'  => 'Katalog',
-            'total-families'   => 'Ukupno obitelji',
-            'total-attributes' => 'Ukupno atributa',
-            'total-groups'     => 'Ukupno grupa',
-            'total-categories' => 'Ukupno kategorija',
-            'total-products'   => 'Ukupno proizvoda',
-            'settings-details' => 'Struktura kataloga',
-            'total-locales'    => 'Ukupno lokaliteta',
-            'total-currencies' => 'Ukupno valuta',
-            'total-channels'   => 'Ukupno kanala',
+            'title'                => 'Nadzorna ploča',
+            'user-info'            => 'Brzi pregled važnih podataka u vašem PIM-u',
+            'user-name'            => 'Pozdrav! :user_name',
+            'catalog-details'      => 'Katalog',
+            'total-families'       => 'Ukupno obitelji',
+            'total-attributes'     => 'Ukupno atributa',
+            'total-groups'         => 'Ukupno grupa',
+            'total-categories'     => 'Ukupno kategorija',
+            'total-products'       => 'Ukupno proizvoda',
+            'settings-details'     => 'Struktura kataloga',
+            'total-locales'        => 'Ukupno lokaliteta',
+            'total-currencies'     => 'Ukupno valuta',
+            'total-channels'       => 'Ukupno kanala',
+            'completeness'         => 'Completeness',
+            'active'               => 'Active',
+            'inactive'             => 'Inactive',
+            'simple'               => 'Simple',
+            'configurable'         => 'Configurable',
+            'product-stats'        => 'Product Statistics',
+            'product-type-dist'    => 'Product Type Distribution',
+            'products-by-status'   => 'Products by Status',
+            'products-over-time'   => 'Product Activity (Last 7 Days)',
+            'legend-created'       => 'Created',
+            'legend-updated'       => 'Updated',
+            'recent-activity'      => 'Recent Activity',
+            'no-activity'          => 'No recent activity found.',
+            'updated'              => 'updated',
+            'created'              => 'created',
+            'deleted'              => 'deleted',
+            'ago'                  => 'ago',
+            'just-now'             => 'just now',
+            'data-transfer'        => 'Data Transfer',
+            'no-jobs'              => 'No recent import/export jobs found.',
+            'job-type-import'      => 'Uvoz',
+            'job-type-export'      => 'Izvoz',
+            'job-state-completed'  => 'Completed',
+            'job-state-failed'     => 'Failed',
+            'job-state-processing' => 'Processing',
+            'job-state-pending'    => 'Pending',
+            'job-state-validated'  => 'Validated',
+            'rows-processed'       => 'Rows Processed',
+            'errors'               => 'Errors',
+            'quick-links'          => 'Quick Links',
+            'create-product'       => 'Create Product',
+            'import-data'          => 'Import Data',
+            'export-data'          => 'Export Data',
+            'manage-attributes'    => 'Manage Attributes',
+            'view-all-activity'    => 'View All',
+            'view-all-jobs'        => 'View All Jobs',
+            'new-this-week'        => 'New This Week',
+            'with-variants'        => 'With Variants',
+            'avg-completeness'     => 'Avg Completeness',
+            'enriched'             => 'Enriched',
+            'analytics-section'    => 'Analytics',
+            'operations-section'   => 'Operations',
+            'needs-attention'      => 'Needs Attention',
+            'unenriched-products'  => 'Unenriched Products',
+            'failed-jobs-24h'      => 'Failed Jobs (24h)',
+            'low-completeness'     => 'Low Completeness',
+            'all-good'             => 'Everything looks good!',
+            'channel-readiness'    => 'Channel Readiness',
+            'ready-to-publish'     => 'ready to publish',
+            'of'                   => 'of',
+            'products-ready'       => 'products ready',
+            'no-readiness-data'    => 'No completeness data available yet.',
+            'entity-types'         => [
+                'product'          => 'Proizvod',
+                'category'         => 'Kategorija',
+                'attribute'        => 'Atribut',
+                'attribute-family' => 'Obitelj',
+                'attribute-group'  => 'Grupa',
+                'category-field'   => 'Polje kategorije',
+                'channel'          => 'Kanal',
+                'role'             => 'Uloga',
+                'job-instance'     => 'Zadatak',
+                'webhook'          => 'Webhook',
+                'api-key'          => 'API ključ',
+            ],
         ],
     ],
-
     'catalog' => [
         'products' => [
             'index' => [
@@ -104,8 +165,7 @@ return [
                 'magic-ai-error'            => 'Molimo provjerite Magic AI vjerodajnice i odaberite ispravan model.',
                 'magic-ai-validate-error'   => 'Provjerite vjerodajnice za Magic AI.',
                 'magic-ai-validate-success' => 'Magic AI vjerodajnice uspješno su potvrđene',
-
-                'create' => [
+                'create'                    => [
                     'back-btn'                          => 'Natrag',
                     'configurable-attributes'           => 'Konfigurabilna svojstva',
                     'create-btn'                        => 'Stvori proizvod',
@@ -118,7 +178,6 @@ return [
                     'not-config-super-attributes-error' => 'Ova Super svojstva s vrijednošću ":super_attributes" nisu pronađena',
                     'sku-exists-error'                  => 'SKU s vrijednošću ":sku" već postoji',
                 ],
-
                 'datagrid' => [
                     'active'                 => 'Omogući',
                     'attribute-family'       => 'Obitelj svojstava',
@@ -148,49 +207,43 @@ return [
                     'update-status'          => 'Ažuriraj status',
                     'parent'                 => 'Roditelj',
                     'parent-identifier'      => 'Roditelj: :sku',
+                    'created-at'             => 'Datum stvaranja',
+                    'updated-at'             => 'Datum ažuriranja',
                 ],
             ],
-
             'edit' => [
-                'preview'  => 'Pregled',
-                'remove'   => 'Ukloni',
-                'save-btn' => 'Spremi proizvod',
-                'title'    => 'Uredi proizvod',
-
+                'preview'    => 'Pregled',
+                'remove'     => 'Ukloni',
+                'save-btn'   => 'Spremi proizvod',
+                'title'      => 'Uredi proizvod',
                 'categories' => [
                     'title' => 'Kategorije',
                 ],
-
                 'images' => [
                     'info'  => 'Rezolucija slike treba biti 560px X 609px',
                     'title' => 'Slike',
                 ],
-
                 'videos' => [
                     'error' => ':attribute ne smije biti veći od :max kilobajta. Odaberite manji datoteku.',
                     'info'  => 'Maksimalna veličina videa treba biti :size',
                     'title' => 'Videi',
                 ],
-
                 'links' => [
                     'related-products' => [
                         'empty-info' => 'Dodajte povezane proizvode.',
                         'info'       => 'Osim proizvoda koji je kupac pregledavao, također će mu biti prikazani povezani proizvodi.',
                         'title'      => 'Povezani proizvodi',
                     ],
-
                     'up-sells' => [
                         'empty-info' => 'Dodajte proizvode koji se prodaju zajedno.',
                         'info'       => 'Kupcima će biti prikazani proizvodi koji služe kao bolja alternativa trenutnom proizvodu.',
                         'title'      => 'Proizvodi koji se prodaju zajedno',
                     ],
-
                     'cross-sells' => [
                         'empty-info' => 'Dodajte proizvod koji je uz dodatnu prodaju.',
                         'info'       => 'Uz proizvode u vašoj košarici, kupcima će biti prikazani impulsni proizvodi.',
                         'title'      => 'Proizvodi koji se prodaju zajedno',
                     ],
-
                     'add-btn'           => 'Dodaj',
                     'delete'            => 'Izbriši',
                     'empty-info'        => 'Dodajte :type proizvode u jednom potezu.',
@@ -199,7 +252,6 @@ return [
                     'sku'               => 'SKU - :sku',
                     'title'             => 'Proizvodi',
                 ],
-
                 'types' => [
                     'configurable' => [
                         'add-btn'                            => 'Dodaj varijantu',
@@ -213,18 +265,16 @@ return [
                         'sku'                                => 'SKU - :sku',
                         'title'                              => 'Varijante',
                         'variant-exists'                     => 'Ova varijanta ili SKU već postoji.',
-                        'variant-attribute-option-not-found' => 'Varijanta svojstva ili opcija nisu pronađeni',
-                        'supper-attribute-not-found'         => 'Super svojstvo nije pronađeno',
-                        'variant-given-exists'               => 'Ova varijanta već postoji',
-
-                        'create' => [
+                        'variant-attribute-option-not-found' => 'Varijanta svojstva ili opcija nisu pronađeni :attributes',
+                        'supper-attribute-not-found'         => 'Super svojstvo nije pronađeno :attribute',
+                        'variant-given-exists'               => 'Ova varijanta već postoji :variants',
+                        'create'                             => [
                             'description'            => 'Opis',
                             'name'                   => 'Ime',
                             'save-btn'               => 'Dodaj',
                             'title'                  => 'Dodaj varijantu',
                             'variant-already-exists' => 'Ova varijanta već postoji',
                         ],
-
                         'edit' => [
                             'disabled'        => 'Onemogućeno',
                             'edit-info'       => 'Ako želite ažurirati informacije o proizvodu detaljno, idite na',
@@ -240,7 +290,6 @@ return [
                             'title'           => 'Proizvod',
                             'weight'          => 'Težina',
                         ],
-
                         'mass-edit' => [
                             'add-images'          => 'Dodaj slike',
                             'apply-to-all-btn'    => 'Primijeni na sve',
@@ -267,23 +316,31 @@ return [
                         ],
                     ],
                 ],
-
                 'translate' => [
-                    'translate-btn'            => 'Prevedi',
-                    'title'                    => 'Prevedi',
-                    'source-channel'           => 'Izvorni kanal',
-                    'locale'                   => 'Izvorna lokalizacija',
-                    'translated-content'       => 'Prevedeni sadržaj',
-                    'translating'              => 'Prevođenje',
-                    'apply'                    => 'Primijeni',
-                    'cancel'                   => 'Odustani',
-                    'target-locales'           => 'Ciljne lokalizacije',
-                    'target-channel'           => 'Ciljni kanal',
-                    'attributes'               => 'Atributi',
-                    'source-content'           => 'Izvorni sadržaj',
-                    'tranlated-job-processed'  => 'Zadatak spremanja prevedenog sadržaja je obrađen.',
+                    'translate-btn'               => 'Prevedi',
+                    'title'                       => 'Prevedi',
+                    'source-channel'              => 'Izvorni kanal',
+                    'locale'                      => 'Izvorna lokalizacija',
+                    'translated-content'          => 'Prevedeni sadržaj',
+                    'translating'                 => 'Prevođenje',
+                    'apply'                       => 'Primijeni',
+                    'back'                        => 'Natrag',
+                    'cancel'                      => 'Odustani',
+                    'target-locales'              => 'Ciljne lokalizacije',
+                    'target-channel'              => 'Ciljni kanal',
+                    'attributes'                  => 'Atributi',
+                    'tranlated-job-processed'     => 'Zadatak spremanja prevedenog sadržaja je obrađen.',
+                    'step'                        => 'Korak',
+                    'select-source'               => 'Odaberite izvor',
+                    'select-target'               => 'Odaberite cilj',
+                    'first-step-title'            => 'Korak 1: Odaberite izvorni kanal, jezik i atribute',
+                    'first-step-title-attributes' => 'Korak 1: Odaberite izvorni kanal i jezik',
+                    'source-content'              => 'Izvorni sadržaj',
+                    'second-step-title'           => 'Korak 2: Odaberite ciljni kanal i jezike',
+                    'target-content'              => 'Ciljni sadržaj',
+                    'next'                        => 'Dalje',
+                    'empty-translation-data'      => 'Podaci za prijevod nisu dostupni na temelju izvornog kanala i lokalizacije',
                 ],
-
                 'product-info' => [
                     'title'        => 'Informacije o proizvodu',
                     'status'       => 'Status',
@@ -293,6 +350,7 @@ return [
                     'created-at'   => 'Datum izrade',
                     'product-type' => 'Vrsta proizvoda',
                 ],
+                'more-actions' => 'Više radnji',
             ],
             'bulk-edit' => [
                 'validation' => [
@@ -305,27 +363,22 @@ return [
                     'select-attribute-or-family' => 'Molimo odaberite barem jedan atribut ili obitelj atributa.',
                     'failed'                     => 'Provjera valjanosti nije uspjela.',
                 ],
-
-                'modal'                      => [
+                'modal' => [
                     'title'            => 'Atributi za grupno uređivanje',
                     'btn-cancel'       => 'Odustani',
                     'btn-proceed'      => 'Nastavi',
                     'attribute-family' => 'Odaberite obitelj atributa',
                 ],
-
                 'index' => [
-                    'no-product'    => 'Nijedan proizvod nije odabran za grupno uređivanje.',
+                    'no-product' => 'Nijedan proizvod nije odabran za grupno uređivanje.',
                 ],
-
                 'filter' => [
-                    'many-product'      => 'Odabrano je previše proizvoda.',
-                    'redirect-message'  => 'Preusmjeravanje na prikaz grupnog uređivanja.',
+                    'many-product'     => 'Odabrano je previše proizvoda.',
+                    'redirect-message' => 'Preusmjeravanje na prikaz grupnog uređivanja.',
                 ],
-
                 'handle-save' => [
-                    'edit-success'  => 'Grupno uređivanje je uspješno.',
+                    'edit-success' => 'Grupno uređivanje je uspješno.',
                 ],
-
                 'id'              => 'ID',
                 'no-changes'      => 'Nema promjena za spremiti.',
                 'success'         => 'Operacija uspješno izvršena.',
@@ -335,9 +388,8 @@ return [
                 'img-preview'     => 'Pregled slike',
                 'no-image'        => 'Nema slike',
                 'img-fail'        => 'Neuspješno učitavanje slike.',
-                'no-opton'        => 'No Options',
+                'no-option'       => 'Nema opcija',
             ],
-
             'create-success'          => 'Proizvod uspješno stvoren',
             'delete-failed'           => 'Brisanje proizvoda nije uspjelo',
             'delete-success'          => 'Proizvod uspješno obrisan',
@@ -351,30 +403,28 @@ return [
             'upload-success'          => 'Datoteka proizvoda uspješno učitana.',
             'update-failure'          => 'Proizvod nije mogao biti ažuriran.',
         ],
-
         'attributes' => [
             'index' => [
                 'create-btn' => 'Kreiraj atribut',
                 'title'      => 'Atributi',
-
-                'datagrid' => [
-                    'channel-based'       => 'Na temelju kanala',
-                    'code'                => 'Kod',
-                    'created-at'          => 'Kreirano',
-                    'delete'              => 'Izbriši',
-                    'edit'                => 'Uredi',
-                    'id'                  => 'ID',
-                    'locale-based'        => 'Na temelju jezika',
-                    'mass-delete-success' => 'Odabrani atributi su uspješno izbrisani',
-                    'name'                => 'Naziv',
-                    'required'            => 'Obavezno',
-                    'type'                => 'Tip',
-                    'unique'              => 'Jedinstven',
-                    'delete-failed'       => 'Ovaj atribut se ne može obrisati.',
-                    'mass-delete-failed'  => 'Odabrani atributi se ne mogu obrisati.',
+                'datagrid'   => [
+                    'channel-based'            => 'Na temelju kanala',
+                    'code'                     => 'Kod',
+                    'created-at'               => 'Kreirano',
+                    'delete'                   => 'Izbriši',
+                    'edit'                     => 'Uredi',
+                    'id'                       => 'ID',
+                    'locale-based'             => 'Na temelju jezika',
+                    'mass-delete-success'      => 'Odabrani atributi su uspješno izbrisani',
+                    'name'                     => 'Naziv',
+                    'required'                 => 'Obavezno',
+                    'type'                     => 'Tip',
+                    'unique'                   => 'Jedinstven',
+                    'delete-failed'            => 'Ovaj atribut se ne može obrisati.',
+                    'mass-delete-failed'       => 'Odabrani atributi se ne mogu obrisati.',
+                    'delete-attribute-failure' => 'This attribute cannot be removed because it is in use for configurable products',
                 ],
             ],
-
             'create' => [
                 'add-attribute-options' => 'Dodaj opcije atributa',
                 'add-option'            => 'Dodaj opciju',
@@ -397,13 +447,12 @@ return [
                 'enable-wysiwyg'        => 'Omogući WYSIWYG uređivač',
                 'file'                  => 'Datoteka',
                 'general'               => 'Općenito',
-                'image'                 => 'Slika',
                 'gallery'               => 'Galerija',
+                'image'                 => 'Slika',
                 'input-options'         => 'Opcije unosa',
                 'input-validation'      => 'Validacija unosa',
                 'is-comparable'         => 'Atribut je usporediv',
                 'is-configurable'       => 'Koristi za kreiranje konfigurabilnih proizvoda',
-                'is-filterable'         => 'Koristi u filtriranju',
                 'is-required'           => 'Obavezno',
                 'is-unique'             => 'Jedinstven',
                 'is-visible-on-front'   => 'Vidljivo na stranici proizvoda (front-end)',
@@ -432,8 +481,9 @@ return [
                 'same-code-error'       => 'Kod opcije mora biti jedinstven.',
                 'usable-in-grid'        => 'Upotrebljivo u mreži',
                 'is-filterable'         => 'Je filtrabilno',
-
-                'option' => [
+                'ai-translate'          => 'AI Translate',
+                'invalid-swatch-type'   => 'The :attribute is not allowed for attribute type :type with swatch type :swatch_type.',
+                'option'                => [
                     'color'    => 'Boja uzorka',
                     'dropdown' => 'Padajući izbornik',
                     'image'    => 'Slika uzorka',
@@ -441,7 +491,6 @@ return [
                     'text'     => 'Tekstualni uzorak',
                 ],
             ],
-
             'edit' => [
                 'add-attribute-options' => 'Dodaj opcije atributa',
                 'add-option'            => 'Dodaj opciju',
@@ -465,12 +514,10 @@ return [
                 'file'                  => 'Datoteka',
                 'general'               => 'Općenito',
                 'image'                 => 'Slika',
-                'gallery'               => 'Galerija',
                 'input-options'         => 'Opcije unosa',
                 'input-validation'      => 'Validacija unosa',
                 'is-comparable'         => 'Atribut je usporediv',
                 'is-configurable'       => 'Koristi za kreiranje konfigurabilnih proizvoda',
-                'is-filterable'         => 'Koristi u filtriranju',
                 'is-required'           => 'Obavezno',
                 'is-unique'             => 'Jedinstven',
                 'is-visible-on-front'   => 'Vidljivo na stranici proizvoda (front-end)',
@@ -499,22 +546,20 @@ return [
                 'same-code-error'       => 'Kod opcije mora biti jedinstven.',
                 'usable-in-grid'        => 'Upotrebljivo u mreži',
                 'is-filterable'         => 'Je filtrabilno',
-                'invalid-swatch-type'   => ':attribute nije dopušten za tip atributa :type sa swatch tipom :swatch_type.',
-
-                'option' => [
-                    'create-success'      => 'Opcija atributa uspješno stvorena',
-                    'delete-success'      => 'Opcija atributa uspješno izbrisana',
+                'ai-translate'          => 'AI Translate',
+                'option'                => [
                     'save-btn'            => 'Spremi opciju',
-                    'sort-update-failure' => 'Neuspjelo ažuriranje redoslijeda sortiranja',
-                    'sort-update-success' => 'Redoslijed sortiranja uspješno ažuriran',
+                    'create-success'      => 'Opcija atributa uspješno stvorena',
                     'update-success'      => 'Opcija atributa uspješno ažurirana',
+                    'sort-update-success' => 'Redoslijed sortiranja uspješno ažuriran',
+                    'sort-update-failure' => 'Neuspjelo ažuriranje redoslijeda sortiranja',
+                    'delete-success'      => 'Opcija atributa uspješno izbrisana',
                     'color'               => 'Boja uzorka',
                     'dropdown'            => 'Padajući izbornik',
                     'image'               => 'Slika uzorka',
                     'text'                => 'Tekstualni uzorak',
                 ],
             ],
-
             'create-success'    => 'Atribut uspješno kreiran',
             'delete-failed'     => 'Brisanje atributa nije uspjelo',
             'delete-success'    => 'Atribut uspješno izbrisan',
@@ -522,19 +567,16 @@ return [
             'user-define-error' => 'Ne možete obrisati sistemski atribut',
             'not-found'         => 'Atribut s kodom ":code" nije pronađen',
         ],
-
         'attribute-options' => [
             'create-success'       => 'Opcija atributa uspješno stvorena',
             'update-success'       => 'Opcija atributa uspješno ažurirana',
             'usable-in-grid-error' => 'Samo 4 atributa mogu biti označena kao upotrebljiva u mreži.',
         ],
-
         'attribute-groups' => [
             'index' => [
                 'create-btn' => 'Kreiraj grupu atributa',
                 'title'      => 'Grupe atributa',
-
-                'datagrid' => [
+                'datagrid'   => [
                     'code'                => 'Kod',
                     'delete'              => 'Izbriši',
                     'mass-delete-success' => 'Odabrane grupe atributa uspješno izbrisane',
@@ -546,7 +588,6 @@ return [
                     'update-status'       => 'Ažuriraj status',
                 ],
             ],
-
             'create' => [
                 'title'    => 'Dodaj grupu atributa',
                 'save-btn' => 'Spremi grupu atributa',
@@ -555,7 +596,6 @@ return [
                 'code'     => 'Kod',
                 'label'    => 'Oznaka',
             ],
-
             'edit' => [
                 'title'    => 'Uredi grupu atributa',
                 'back-btn' => 'Natrag',
@@ -564,7 +604,6 @@ return [
                 'code'     => 'Kod',
                 'label'    => 'Oznaka',
             ],
-
             'create-success'        => 'Grupa atributa uspješno stvorena',
             'delete-failed'         => 'Brisanje grupe atributa nije uspjelo',
             'delete-success'        => 'Grupa atributa uspješno izbrisana',
@@ -573,12 +612,10 @@ return [
             'attribute-group-error' => 'Grupa se koristi u obiteljima.',
             'not-found'             => 'Grupa atributa s kodom ":code" nije pronađena',
         ],
-
         'categories' => [
             'index' => [
-                'add-btn' => 'Kreiraj kategoriju',
-                'title'   => 'Kategorije',
-
+                'add-btn'  => 'Kreiraj kategoriju',
+                'title'    => 'Kategorije',
                 'datagrid' => [
                     'active'         => 'Aktivno',
                     'code'           => 'Kod',
@@ -588,14 +625,13 @@ return [
                     'id'             => 'ID',
                     'inactive'       => 'Neaktivno',
                     'name'           => 'Prikazano ime',
+                    'category-name'  => 'Ime',
                     'no-of-products' => 'Broj proizvoda',
                     'position'       => 'Pozicija',
-                    'category-name'  => 'Ime',
                     'status'         => 'Vidljivo u izborniku',
                     'update-status'  => 'Ažuriraj status',
                 ],
             ],
-
             'create' => [
                 'back-btn'            => 'Natrag',
                 'code'                => 'Kod',
@@ -616,7 +652,6 @@ return [
                 'right-section'       => 'Sekcija s konfiguracijama',
                 'left-section'        => 'Opći odjeljak',
             ],
-
             'edit' => [
                 'back-btn'               => 'Natrag',
                 'code'                   => 'Kod',
@@ -635,7 +670,6 @@ return [
                 'right-section'          => 'Sekcija s konfiguracijama',
                 'left-section'           => 'Opći odjeljak',
             ],
-
             'category'             => 'Kategorija',
             'create-success'       => 'Kategorija uspješno stvorena.',
             'delete-category-root' => 'Ne možete izbrisati glavnu kategoriju koja je povezana s kanalom.',
@@ -650,14 +684,12 @@ return [
             'create-failure'       => 'Kategorija nije mogla biti stvorena.',
             'update-failure'       => 'Kategorija nije mogla biti ažurirana.',
         ],
-
         'category_fields' => [
             'index' => [
                 'create-btn' => 'Stvori Polje Kategorije',
                 'add-btn'    => 'Stvori Polje Kategorije',
                 'title'      => 'Polja Kategorije',
-
-                'datagrid' => [
+                'datagrid'   => [
                     'channel-based'       => 'Na Temelju Kanala',
                     'code'                => 'Kod',
                     'created-at'          => 'Stvoreno',
@@ -682,7 +714,6 @@ return [
                     'mass-delete-failed'  => 'Odabrana polja kategorije ne mogu biti izbrisana.',
                 ],
             ],
-
             'create' => [
                 'add-field-options'   => 'Dodaj Opcije Polja Kategorije',
                 'add-option'          => 'Dodaj Opciju',
@@ -737,9 +768,7 @@ return [
                 'set-section-right'   => 'Sekcija Konfiguracije',
                 'settings'            => 'Postavke',
                 'same-code-error'     => 'Kod opcije mora biti jedinstven.',
-                'ai-translate'        => 'AI Prijevod',
-
-                'option' => [
+                'option'              => [
                     'dropdown' => 'Padajući Izbornik',
                     'save-btn' => 'Spremi Opciju',
                     'color'    => 'Boja Swatch',
@@ -747,7 +776,6 @@ return [
                     'text'     => 'Tekst Swatch',
                 ],
             ],
-
             'edit' => [
                 'add-field-options'   => 'Dodaj Opcije Polja Kategorije',
                 'add-option'          => 'Dodaj Opciju',
@@ -803,9 +831,7 @@ return [
                 'set-section-right'   => 'Sekcija Konfiguracije',
                 'settings'            => 'Postavke',
                 'same-code-error'     => 'Kod opcije mora biti jedinstven.',
-                'ai-translate'        => 'AI Prijevod',
-
-                'option' => [
+                'option'              => [
                     'dropdown' => 'Padajući Izbornik',
                     'save-btn' => 'Spremi Opciju',
                     'color'    => 'Boja Swatch',
@@ -813,7 +839,6 @@ return [
                     'text'     => 'Tekst Swatch',
                 ],
             ],
-
             'create-success'    => 'Polje Kategorije Stvoreno Uspješno',
             'delete-failed'     => 'Brisanje Polja Kategorije Nije Uspjelo',
             'delete-success'    => 'Polje Kategorije Izbrisano Uspješno',
@@ -821,17 +846,14 @@ return [
             'user-define-error' => 'Ne možete obrisati sistemsko Polje Kategorije',
             'not-found'         => 'Polje Kategorije s kodom ":code" nije pronađeno',
         ],
-
         'category-fields-options' => [
             'create-success' => 'Opcija polja kategorije uspješno stvorena',
             'update-success' => 'Opcija polja kategorije uspješno ažurirana',
         ],
-
         'families' => [
             'index' => [
-                'add'   => 'Kreiraj obitelj atributa',
-                'title' => 'Obitelji',
-
+                'add'      => 'Kreiraj obitelj atributa',
+                'title'    => 'Obitelji',
                 'datagrid' => [
                     'code'           => 'Kod',
                     'delete'         => 'Izbriši',
@@ -846,7 +868,6 @@ return [
                     'update-success' => 'Odabrani :resource su uspješno ažurirani',
                 ],
             ],
-
             'create' => [
                 'assign-group-btn'                 => 'Dodijeli atributnu grupu',
                 'assign-group-title'               => 'Dodijeli atributnu grupu',
@@ -877,7 +898,6 @@ return [
                 'unassigned-attribute-groups'      => 'Neodređene atributne grupe',
                 'assign-first-attribute-group'     => 'Dodijelite grupu u obitelj.',
             ],
-
             'edit' => [
                 'assign-group-btn'                 => 'Dodijeli atributnu grupu',
                 'assign-group-title'               => 'Dodijeli atributnu grupu',
@@ -911,7 +931,6 @@ return [
                 'variant-options-label'            => 'Mogućnosti za konfiguraciju',
                 'select-variant'                   => 'Odaberite atribute',
             ],
-
             'attribute-family'               => 'Atributna obitelj',
             'attribute-product-error'        => 'Obitelj se koristi u proizvodima.',
             'create-success'                 => 'Obitelj uspješno stvorena.',
@@ -924,7 +943,6 @@ return [
             'not-found'                      => 'Atributna obitelj s kodom ":code" nije pronađena',
             'can-not-update-variant-options' => 'Ne možete ažurirati opcije konfiguracije jer ova obitelj već ima varijante proizvoda.',
         ],
-
         'history' => [
             'index' => [
                 'datagrid' => [
@@ -935,7 +953,6 @@ return [
             ],
         ],
     ],
-
     'settings' => [
         'locales' => [
             'index' => [
@@ -944,8 +961,7 @@ return [
                 'title'                 => 'Lokaliteti',
                 'can-not-delete-error'  => 'Ne možete izbrisati lokalitet povezan s kanalom ili korisnikom',
                 'can-not-disable-error' => 'Ne možete onemogućiti lokalitet povezan s kanalom ili korisnikom',
-
-                'datagrid' => [
+                'datagrid'              => [
                     'actions'     => 'Radnje',
                     'code'        => 'Kod',
                     'delete'      => 'Izbriši',
@@ -956,14 +972,12 @@ return [
                     'name'        => 'Prikazano ime',
                     'rtl'         => 'RTL',
                     'mass-update' => 'Ažuriraj status',
-
-                    'status' => [
+                    'status'      => [
                         'title'    => 'Status',
                         'active'   => 'Omogući',
                         'inactive' => 'Onemogući',
                     ],
                 ],
-
                 'create' => [
                     'code'             => 'Kod',
                     'direction'        => 'Smjer',
@@ -974,11 +988,9 @@ return [
                     'title'            => 'Kreiraj lokalitet',
                     'status'           => 'Status',
                 ],
-
                 'edit' => [
                     'title' => 'Uredi lokalitet',
                 ],
-
                 'create-success'    => 'Lokalitet je uspješno kreiran.',
                 'delete-failed'     => 'Brisanje lokaliteta nije uspjelo',
                 'delete-success'    => 'Lokalitet je uspješno izbrisan.',
@@ -987,7 +999,6 @@ return [
                 'update-success'    => 'Lokalitet je uspješno ažuriran.',
             ],
         ],
-
         'currencies' => [
             'index' => [
                 'create-btn'            => 'Kreiraj valutu',
@@ -995,8 +1006,7 @@ return [
                 'title'                 => 'Valute',
                 'can-not-delete-error'  => 'Ne možete izbrisati valutu povezanu s kanalom',
                 'can-not-disable-error' => 'Ne možete onemogućiti valutu povezanu s kanalom',
-
-                'datagrid' => [
+                'datagrid'              => [
                     'actions'        => 'Radnje',
                     'code'           => 'Kod',
                     'delete'         => 'Izbriši',
@@ -1008,14 +1018,12 @@ return [
                     'partial-action' => 'Neke radnje nisu izvršene zbog sistemskih ograničenja za: :resource',
                     'update-success' => 'Odabrano :resource je uspješno ažurirano',
                     'mass-update'    => 'Ažuriraj status',
-
-                    'status' => [
+                    'status'         => [
                         'title'    => 'Status',
                         'active'   => 'Omogući',
                         'inactive' => 'Onemogući',
                     ],
                 ],
-
                 'create' => [
                     'code'           => 'Kod',
                     'create-btn'     => 'Kreiraj valutu',
@@ -1028,11 +1036,9 @@ return [
                     'title'          => 'Kreiraj novu valutu',
                     'status'         => 'Status',
                 ],
-
                 'edit' => [
                     'title' => 'Uredi valutu',
                 ],
-
                 'create-success'    => 'Valuta je uspješno kreirana.',
                 'delete-failed'     => 'Brisanje valute nije uspjelo',
                 'delete-success'    => 'Valuta je uspješno izbrisana.',
@@ -1041,7 +1047,6 @@ return [
                 'cannot-delete'     => 'Valuta se ne može izbrisati.',
             ],
         ],
-
         'data-transfer' => [
             'tracker' => [
                 'index' => [
@@ -1059,28 +1064,28 @@ return [
                         'user'                 => 'Korisnik',
                         'created_at'           => 'Stvoreno u',
                         'updated_at'           => 'Ažurirano u',
-
-                        'pending'    => 'Na čekanju',
-                        'validated'  => 'Potvrđeno',
-                        'processing' => 'U obradi',
-                        'processed'  => 'Obrađeno',
-                        'linking'    => 'Povezivanje',
-                        'linked'     => 'Povezano',
-
-                        'indexing'  => 'Indeksiranje',
-                        'indexed'   => 'Indeksirano',
-                        'completed' => 'Završeno',
-                        'failed'    => 'Neuspješno',
+                        'pending'              => 'Na čekanju',
+                        'validating'           => 'Validacija',
+                        'validated'            => 'Potvrđeno',
+                        'processing'           => 'U obradi',
+                        'processed'            => 'Obrađeno',
+                        'linking'              => 'Povezivanje',
+                        'linked'               => 'Povezano',
+                        'indexing'             => 'Indeksiranje',
+                        'indexed'              => 'Indeksirano',
+                        'completed'            => 'Završeno',
+                        'paused'               => 'Pauzirano',
+                        'cancelled'            => 'Otkazano',
+                        'failed'               => 'Neuspješno',
                     ],
                 ],
-
                 'import' => [
                     'back-btn'                => 'Natrag',
                     'completed-batches'       => 'Ukupno dovršenih serija:',
                     'download-error-report'   => 'Preuzmi puni izvještaj',
                     'edit-btn'                => 'Uredi',
                     'imported-info'           => 'Čestitamo! Uvoz je uspješno završen.',
-                    'importing-info'          => 'Izvoz u tijeku',
+                    'exporting-info'          => 'Izvoz u tijeku',
                     'indexing-info'           => 'Indeksiranje resursa (cijena, Elasticsearch) u tijeku',
                     'linking-info'            => 'Povezivanje resursa u tijeku',
                     'progress'                => 'Napredak:',
@@ -1098,7 +1103,6 @@ return [
                     'validation-failed-info'  => 'Vaš uvoz nije valjan. Ispravite navedene greške i pokušajte ponovo.',
                     'validation-success-info' => 'Vaš uvoz je valjan. Kliknite na "Izvoz" za pokretanje procesa uvoza.',
                 ],
-
                 'summary' => [
                     'total-batches' => 'Ukupan broj serija:',
                     'created'       => 'Ukupan broj stvorenih zapisa:',
@@ -1109,150 +1113,193 @@ return [
                     'updated'       => 'Ukupan broj ažuriranih zapisa:',
                     'skipped'       => 'Ukupan broj preskočenih zapisa:',
                 ],
-
-                'info'              => 'Čestitamo! Vaš zadatak je uspješno izvršen.',
-                'create-success'    => 'Izvoz uspješno stvoren.',
-                'delete-failed'     => 'Brisanje izvoza nije uspjelo.',
-                'delete-success'    => 'Izvoz uspješno obrisan.',
-                'not-valid'         => 'Izvoz nije valjan',
-                'nothing-to-import' => 'Nema resursa za uvoz.',
-                'setup-queue-error' => 'Molimo promijenite upravitelja reda u "database" ili "redis" za pokretanje procesa uvoza.',
-                'update-success'    => 'Izvoz uspješno ažuriran.',
-                'failed-info'       => 'Zadatak nije uspio. Ispravite navedene greške i pokušajte ponovo.',
-                'download-log-file' => 'Preuzmi zapisnik',
+                'info'                  => 'Čestitamo! Vaš zadatak je uspješno izvršen.',
+                'running-time'          => 'Vrijeme izvršavanja',
+                'estimated-remaining'   => 'Procijenjeno preostalo vrijeme',
+                'total-duration'        => 'Ukupno trajanje',
+                'status'                => 'Status',
+                'waiting'               => 'Čekanje',
+                'total-records'         => 'Ukupno zapisa',
+                'job-id'                => 'ID zadatka',
+                'records-created'       => 'Stvoreni zapisi',
+                'records-updated'       => 'Ažurirani zapisi',
+                'records-deleted'       => 'Obrisani zapisi',
+                'run-again'             => 'Pokreni ponovo',
+                'completed-success'     => 'zadatak uspješno dovršen',
+                'completed-info-sub'    => 'Svi zapisi su obrađeni i indeksirani. Vaš katalog je ažuran.',
+                'create-success'        => 'Izvoz uspješno stvoren.',
+                'delete-failed'         => 'Brisanje izvoza nije uspjelo.',
+                'delete-success'        => 'Izvoz uspješno obrisan.',
+                'not-valid'             => 'Izvoz nije valjan',
+                'nothing-to-import'     => 'Nema resursa za uvoz.',
+                'setup-queue-error'     => 'Molimo promijenite upravitelja reda u "database" ili "redis" za pokretanje procesa uvoza.',
+                'update-success'        => 'Izvoz uspješno ažuriran.',
+                'failed-info'           => 'Zadatak nije uspio. Ispravite navedene greške i pokušajte ponovo.',
+                'download-log-file'     => 'Preuzmi zapisnik',
+                'pause'                 => 'Pauziraj',
+                'resume'                => 'Nastavi',
+                'cancel'                => 'Otkaži',
+                'paused'                => 'Uvoz je pauziran.',
+                'resumed'               => 'Uvoz je nastavljen.',
+                'cancelled'             => 'Uvoz je otkazan.',
+                'paused-info'           => 'Uvoz je pauziran. Preostali paketi su na čekanju.',
+                'paused-info-export'    => 'Izvoz je pauziran. Preostali paketi su na čekanju.',
+                'cancelled-info'        => 'Uvoz je otkazan. Djelomični rezultati prikazani su ispod.',
+                'cancelled-info-export' => 'Izvoz je otkazan. Djelomični rezultati prikazani su ispod.',
+                'cancel-confirm'        => 'Jeste li sigurni da želite otkazati ovaj zadatak? Ova radnja se ne može poništiti.',
+                'live'                  => 'Uživo',
+                'import-progress'       => 'Napredak uvoza',
+                'export-progress'       => 'Napredak izvoza',
+                'linking-progress'      => 'Napredak povezivanja',
+                'indexing-progress'     => 'Napredak indeksiranja',
+                'job-label'             => 'Zadatak',
             ],
+            'imports' => [
+                'import-start-fail' => 'Pokretanje procesa uvoza nije uspjelo. Pokušajte ponovno.',
 
-            'import' => [
                 'create' => [
-                    'code'                => 'Kod',
-                    'action'              => 'Akcija',
-                    'allowed-errors'      => 'Dozvoljene pogreške',
-                    'allowed-file-types'  => 'Dozvoljeni tipovi datoteka (CSV, XLSX, XLS)',
+                    'code'                => 'Code',
+                    'action'              => 'Action',
+                    'allowed-errors'      => 'Allowed Errors',
+                    'allowed-file-types'  => 'Dopuštene vrste datoteka (CSV, XLSX, XLS)',
                     'back-btn'            => 'Natrag',
-                    'create-update'       => 'Stvori/Ažuriraj',
-                    'delete'              => 'Izbriši',
-                    'media'               => 'Datoteka / Slike',
-                    'images'              => 'Slike',
-                    'download-sample'     => 'Preuzmi uzorak :resource CSV',
-                    'field-separator'     => 'Separator polja',
-                    'separator-info'      => 'Koristite samo za CSV datoteke',
-                    'file-info-example'   => 'Smjestite slike u storage/app/public/. Za slike u storage/app/public/import-images, uključite import-images/ u putanju i koristite samo ime datoteke u datoteci za uvoz.',
-                    'file-info'           => 'Koristite relativnu putanju za /project-root/storage/app/import, npr. product-images, import-images.',
-                    'file'                => 'Datoteka',
-                    'general'             => 'Općenito',
-                    'upload_images'       => 'Prenesi slike za postavljanje puta',
-                    'download-sample-zip' => 'Preuzmi uzorak slika ZIP',
-                    'zip-drop-hint'       => 'Kliknite ili povucite i ispustite ZIP datoteku ovdje',
-                    'images-directory'    => 'Putanja',
-                    'process-in-queue'    => 'Obraditi u redu',
-                    'results'             => 'Rezultati',
-                    'save-btn'            => 'Spremi uvoz',
-                    'settings'            => 'Postavke',
-                    'skip-errors'         => 'Preskoči pogreške',
-                    'stop-on-errors'      => 'Zaustavi na pogreškama',
-                    'title'               => 'Stvori uvoz',
-                    'type'                => 'Vrsta',
-                    'validation-strategy' => 'Strategija validacije',
+                    'create-update'       => 'Create/Update',
+                    'delete'              => 'Obriši',
+                    'media'               => 'File / Images',
+                    'images'              => 'Images',
+                    'download-sample'     => 'Download :resource Sample CSV',
+                    'field-separator'     => 'Field Separator',
+                    'separator-info'      => 'Koristi samo za CSV datoteke',
+                    'file-info-example'   => 'Place images in storage/app/public/. For images in storage/app/public/import-images, include import-images/ in the path and use only the file name in the import file.',
+                    'file-info'           => 'Use relative path to /project-root/storage/app/import, e.g. product-images, import-images.',
+                    'file'                => 'File',
+                    'general'             => 'General',
+                    'upload_images'       => 'Upload Images to set Path',
+                    'download-sample-zip' => 'Download Sample Images ZIP',
+                    'zip-uploading'       => 'Učitavanje i raspakiravanje ZIP...',
+                    'zip-upload-success'  => 'ZIP uspješno učitan i raspakiran.',
+                    'zip-upload-error'    => 'Učitavanje ZIP-a nije uspjelo. Pokušajte ponovo.',
+                    'invalid-zip'         => 'Učitana datoteka nije valjana ZIP arhiva.',
+                    'zip-upload-or'       => 'ili učitajte ZIP sa slikama',
+                    'zip-click-upload'    => 'Kliknite za učitavanje ZIP-a sa slikama',
+                    'zip-files-extracted' => 'datoteka raspakirano',
+                    'zip-drop-hint'       => 'Click or drag & drop a ZIP file here',
+                    'images-directory'    => 'Path',
+                    'process-in-queue'    => 'Process In Queue',
+                    'results'             => 'Results',
+                    'save-btn'            => 'Save Import',
+                    'settings'            => 'Settings',
+                    'skip-errors'         => 'Skip Errors',
+                    'stop-on-errors'      => 'Stop on Errors',
+                    'title'               => 'Create Import',
+                    'type'                => 'Tip',
+                    'validation-strategy' => 'Validation Strategy',
                 ],
-
                 'edit' => [
-                    'images'              => 'Slike',
-                    'action'              => 'Akcija',
-                    'allowed-errors'      => 'Dozvoljene pogreške',
-                    'allowed-file-types'  => 'Dozvoljeni tipovi datoteka (CSV, XLSX, XLS)',
+                    'images'              => 'Images',
+                    'action'              => 'Action',
+                    'allowed-errors'      => 'Allowed Errors',
+                    'allowed-file-types'  => 'Dopuštene vrste datoteka (CSV, XLSX, XLS)',
                     'back-btn'            => 'Natrag',
-                    'create-update'       => 'Stvori/Ažuriraj',
-                    'delete'              => 'Izbriši',
-                    'download-sample'     => 'Preuzmi uzorak',
-                    'field-separator'     => 'Separator polja',
-                    'separator-info'      => 'Koristite samo za CSV datoteke',
-                    'file-info-example'   => 'Smjestite slike u storage/app/public/. Za slike u storage/app/public/import-images, uključite import-images/ u putanju i koristite samo ime datoteke u datoteci za uvoz.',
-                    'file-info'           => 'Koristite relativnu putanju za /project-root/storage/app/import, npr. product-images, import-images.',
-                    'file'                => 'Datoteka',
-                    'general'             => 'Općenito',
-                    'images-directory'    => 'Putanja',
-                    'process-in-queue'    => 'Obraditi u redu',
-                    'results'             => 'Rezultati',
-                    'save-btn'            => 'Spremi uvoz',
-                    'settings'            => 'Postavke',
-                    'skip-errors'         => 'Preskoči pogreške',
-                    'stop-on-errors'      => 'Zaustavi na pogreškama',
-                    'title'               => 'Uredi uvoz',
-                    'type'                => 'Vrsta',
-                    'validation-strategy' => 'Strategija validacije',
+                    'create-update'       => 'Create/Update',
+                    'delete'              => 'Obriši',
+                    'download-sample'     => 'Download Sample',
+                    'field-separator'     => 'Field Separator',
+                    'separator-info'      => 'Koristi samo za CSV datoteke',
+                    'file-info-example'   => 'Place images in storage/app/public/. For images in storage/app/public/import-images, include import-images/ in the path and use only the file name in the import file.',
+                    'file-info'           => 'Use relative path to /project-root/storage/app/import, e.g. product-images, import-images.',
+                    'file'                => 'File',
+                    'general'             => 'General',
+                    'images-directory'    => 'Path',
+                    'process-in-queue'    => 'Process In Queue',
+                    'results'             => 'Results',
+                    'save-btn'            => 'Save Import',
+                    'settings'            => 'Settings',
+                    'skip-errors'         => 'Skip Errors',
+                    'stop-on-errors'      => 'Stop on Errors',
+                    'title'               => 'Edit Import',
+                    'type'                => 'Tip',
+                    'validation-strategy' => 'Validation Strategy',
                 ],
-
                 'batch' => [
-                    'title' => 'Uvoz dodan u red',
+                    'title' => 'Import added in the queue',
                 ],
-
                 'index' => [
-                    'button-title' => 'Stvori uvoz',
-                    'title'        => 'Uvozi',
-
-                    'datagrid' => [
-                        'actions'               => 'Akcije',
-                        'completed-at'          => 'Završeno',
-                        'created'               => 'Stvoreno',
-                        'delete'                => 'Izbriši',
-                        'deleted'               => 'Izbrisano',
+                    'button-title' => 'Create Import',
+                    'title'        => 'Imports',
+                    'datagrid'     => [
+                        'actions'               => 'Radnje',
+                        'completed-at'          => 'Completed At',
+                        'created'               => 'Created',
+                        'delete'                => 'Obriši',
+                        'deleted'               => 'Deleted',
                         'edit'                  => 'Uredi',
-                        'error-file'            => 'Datoteka s pogreškama',
+                        'error-file'            => 'Error File',
                         'id'                    => 'ID',
-                        'code'                  => 'Kod',
-                        'type'                  => 'Vrsta',
-                        'action'                => 'Akcija',
-                        'started-at'            => 'Početak',
-                        'state'                 => 'Stanje',
-                        'summary'               => 'Sažetak',
-                        'updated'               => 'Ažurirano',
-                        'uploaded-file'         => 'Prenesena datoteka',
-                        'images_directory_path' => 'Putanja slika',
+                        'code'                  => 'Code',
+                        'type'                  => 'Tip',
+                        'action'                => 'Action',
+                        'started-at'            => 'Started At',
+                        'state'                 => 'State',
+                        'summary'               => 'Summary',
+                        'updated'               => 'Updated',
+                        'uploaded-file'         => 'Uploaded File',
+                        'images_directory_path' => 'Images File',
                         'import'                => 'Uvoz',
                     ],
                 ],
-
                 'import' => [
+                    'action'                  => 'Action Mode',
                     'back-btn'                => 'Natrag',
-                    'completed-batches'       => 'Ukupno dovršeni paketi:',
-                    'download-error-report'   => 'Preuzmi izvještaj o pogreškama',
+                    'completed-batches'       => 'Total Batches Completed:',
+                    'download-error-report'   => 'Download Full Report',
                     'edit-btn'                => 'Uredi',
-                    'imported-info'           => 'Čestitamo! Vaš uvoz je bio uspješan.',
-                    'importing-info'          => 'Uvoz u tijeku',
                     'exporting-info'          => 'Izvoz u tijeku',
-                    'indexing-info'           => 'Indeksiranje resursa (cijena, Elastic Search) u tijeku',
-                    'linking-info'            => 'Povezivanje resursa u tijeku',
-                    'progress'                => 'Napredak:',
-                    'pending-info'            => 'Čeka na obradu posla u redu',
-                    'pending-step-export'     => 'Izvoz u tijeku',
+                    'exporting-info-sub'      => 'Generiranje datoteke izvoza i zapisivanje zapisa. Molimo pričekajte.',
+                    'file_path'               => 'File Path',
+                    'imported-info'           => 'Congratulations! Your import was successful.',
+                    'import-now'              => 'Import Now',
+                    'importing-info'          => 'Import In Process',
+                    'importing-info-sub'      => 'Obrada paketa i zapisivanje zapisa u bazu podataka.',
+                    'indexing-info'           => 'Resources Indexing (Price, Elastic Search) In Progress',
+                    'indexing-info-sub'       => 'Ponovna izgradnja indeksa pretraživanja i predmemorija cijena nakon uvoza. Ovaj korak se izvršava automatski.',
+                    'indexing-type'           => 'Price + ES',
+                    'linking-info'            => 'Resources Linking In Progress',
+                    'linking-info-sub'        => 'Povezivanje povezanih resursa i asocijacija između zapisa.',
+                    'pending-info'            => 'Job queued — waiting for worker to start...',
+                    'pending-info-sub'        => 'Vaš zadatak je dodan u red čekanja za obradu. Radnik će ga uskoro preuzeti.',
+                    'pending-step-complete'   => 'Dovršeno',
+                    'pending-step-export'     => 'Exporting',
+                    'pending-step-import'     => 'Uvoženje',
+                    'pending-step-queue'      => 'U redu čekanja',
+                    'pending-step-validate'   => 'Validacija',
+                    'profile'                 => 'Profil uvoza',
+                    'progress'                => 'Progress:',
                     'title'                   => 'Uvoz',
                     'total-batches'           => 'Ukupno paketa:',
                     'total-created'           => 'Ukupno stvorenih zapisa:',
                     'total-deleted'           => 'Ukupno obrisanih zapisa:',
-                    'total-errors'            => 'Ukupno pogrešaka:',
+                    'total-errors'            => 'Ukupno grešaka:',
                     'total-invalid-rows'      => 'Ukupno nevažećih redaka:',
                     'total-rows-processed'    => 'Ukupno obrađenih redaka:',
                     'total-updated'           => 'Ukupno ažuriranih zapisa:',
-                    'validate-info'           => 'Kliknite za validaciju podataka kako biste provjerili vaš uvoz.',
-                    'validate'                => 'Potvrdi',
-                    'file_path'               => 'Putanja datoteke',
-                    'import-now'              => 'Uvezi sada',
-                    'action'                  => 'Vrsta akcije',
-                    'profile'                 => 'Profil uvoza',
-                    'validating-info'         => 'Počelo je čitanje i validacija podataka',
-                    'validation-failed-info'  => 'Vaš uvoz je nevažeći. Molimo ispravite sljedeće pogreške i pokušajte ponovno.',
-                    'validation-success-info' => 'Vaš uvoz je valjan. Pokretanje uvoza automatski...',
+                    'validate'                => 'Validate',
+                    'validate-info'           => 'Click on Validate Data to check your import.',
+                    'validating-info'         => 'Reading file and validating data...',
+                    'validating-info-sub'     => 'Provjera integriteta sheme, mapiranja polja i tipova podataka prije početka uvoza.',
+                    'validation-failed-info'  => 'Vaš uvoz nije valjan. Ispravite sljedeće greške i pokušajte ponovo.',
+                    'validation-success-info' => 'Your import is valid. Starting import automatically...',
                 ],
-
-                'create-success'    => 'Uvoz uspješno stvoren.',
-                'delete-failed'     => 'Brisanje uvoza nije uspjelo zbog neočekivane pogreške.',
-                'delete-success'    => 'Uvoz uspješno obrisan.',
-                'not-valid'         => 'Uvoz je nevažeći',
-                'nothing-to-import' => 'Nema resursa za uvoz.',
-                'setup-queue-error' => 'Molimo, promijenite svoj upravljač reda na "bazu podataka" ili "redis" kako biste započeli proces uvoza.',
-                'update-success'    => 'Uvoz uspješno ažuriran.',
+                'create-success'     => 'Import created successfully.',
+                'delete-failed'      => 'Import deletion failed unexpectedly.',
+                'delete-success'     => 'Import deleted successfully.',
+                'invalid-zip'        => 'Učitana datoteka nije valjana ZIP arhiva.',
+                'not-valid'          => 'Import is invalid',
+                'nothing-to-import'  => 'There are no resources to import.',
+                'setup-queue-error'  => 'Please change your queue driver to "database" or "redis" to start the import process.',
+                'update-success'     => 'Import updated successfully.',
+                'zip-upload-success' => 'ZIP uspješno učitan i raspakiran.',
             ],
-
             'exports' => [
                 'create' => [
                     'code'                => 'Kod',
@@ -1283,7 +1330,6 @@ return [
                     'type'                => 'Tip',
                     'validation-strategy' => 'Strategija validacije',
                 ],
-
                 'edit' => [
                     'action'              => 'Akcija',
                     'allowed-errors'      => 'Dozvoljene pogreške',
@@ -1307,16 +1353,13 @@ return [
                     'type'                => 'Tip',
                     'validation-strategy' => 'Strategija validacije',
                 ],
-
                 'batch' => [
                     'title' => 'Izvoz dodat u red',
                 ],
-
                 'index' => [
                     'button-title' => 'Kreiraj izvoz',
                     'title'        => 'Izvozi',
-
-                    'datagrid' => [
+                    'datagrid'     => [
                         'actions'               => 'Akcije',
                         'completed-at'          => 'Završeno',
                         'created'               => 'Kreirano',
@@ -1337,7 +1380,6 @@ return [
                         'export'                => 'Izvoz',
                     ],
                 ],
-
                 'export' => [
                     'back-btn'                => 'Natrag',
                     'completed-batches'       => 'Završeni paketi ukupno:',
@@ -1367,7 +1409,6 @@ return [
                     'file-format'             => 'Format datoteke',
                     'with-media'              => 'Sa medijima',
                 ],
-
                 'create-success'    => 'Izvoz uspješno kreiran.',
                 'delete-failed'     => 'Neočekivana pogreška prilikom brisanja izvoza.',
                 'delete-success'    => 'Izvoz uspješno izbrisan.',
@@ -1377,7 +1418,6 @@ return [
                 'update-success'    => 'Izvoz uspješno ažuriran.',
             ],
         ],
-
         'channels' => [
             'index' => [
                 'create-btn'           => 'Kreiraj kanal',
@@ -1396,7 +1436,6 @@ return [
                     'root-category' => 'Glavna kategorija',
                 ],
             ],
-
             'create' => [
                 'allowed-ips'            => 'Dopuštene IP adrese',
                 'cancel'                 => 'Nazad',
@@ -1431,7 +1470,6 @@ return [
                 'theme'                  => 'Tema',
                 'title'                  => 'Kreiraj kanal',
             ],
-
             'edit' => [
                 'allowed-ips'            => 'Dopuštene IP adrese',
                 'back-btn'               => 'Nazad',
@@ -1469,13 +1507,11 @@ return [
                 'update-success'         => 'Kanal uspješno ažuriran',
             ],
         ],
-
         'users' => [
             'index' => [
-                'admin' => 'Administrator',
-                'title' => 'Korisnici',
-                'user'  => 'Korisnik',
-
+                'admin'  => 'Administrator',
+                'title'  => 'Korisnici',
+                'user'   => 'Korisnik',
                 'create' => [
                     'confirm-password'  => 'Potvrdite lozinku',
                     'email'             => 'E-mail',
@@ -1489,7 +1525,6 @@ return [
                     'user-timezone'     => 'Vremenska zona',
                     'select'            => 'Odaberite',
                 ],
-
                 'datagrid' => [
                     'actions'  => 'Akcije',
                     'active'   => 'Aktivno',
@@ -1503,12 +1538,10 @@ return [
                     'status'   => 'Status',
                     'image'    => 'Slika',
                 ],
-
                 'edit' => [
                     'title' => 'Uredi korisnika',
                 ],
             ],
-
             'edit' => [
                 'back-btn'         => 'Natrag',
                 'confirm-password' => 'Potvrdite lozinku',
@@ -1521,7 +1554,6 @@ return [
                 'status'           => 'Status',
                 'title'            => 'Uredi korisnika',
             ],
-
             'activate-warning'          => 'Vaš račun još nije aktiviran, obratite se administratoru.',
             'cannot-change'             => 'Korisnik se ne može mijenjati',
             'create-success'            => 'Korisnik uspješno kreiran.',
@@ -1534,13 +1566,11 @@ return [
             'update-success'            => 'Korisnik uspješno ažuriran.',
             'current-user-delete-error' => 'Trenutno prijavljeni korisnik se ne može obrisati.',
         ],
-
         'roles' => [
             'index' => [
                 'create-btn' => 'Kreiraj ulogu',
                 'title'      => 'Uloge',
-
-                'datagrid' => [
+                'datagrid'   => [
                     'delete'          => 'Izbriši',
                     'edit'            => 'Uredi',
                     'id'              => 'ID',
@@ -1548,7 +1578,6 @@ return [
                     'permission-type' => 'Vrsta dopuštenja',
                 ],
             ],
-
             'create' => [
                 'access-control' => 'Kontrola pristupa',
                 'all'            => 'Sve',
@@ -1561,7 +1590,6 @@ return [
                 'save-btn'       => 'Spremi ulogu',
                 'title'          => 'Kreiraj ulogu',
             ],
-
             'edit' => [
                 'access-control' => 'Kontrola pristupa',
                 'all'            => 'Sve',
@@ -1574,7 +1602,6 @@ return [
                 'save-btn'       => 'Spremi ulogu',
                 'title'          => 'Uredi ulogu',
             ],
-
             'being-used'        => 'Uloga je već korištena u administratorskom korisniku',
             'being-used-by'     => 'Uloga je već korištena od strane korisnika :name',
             'create-success'    => 'Uloge uspješno kreirane',
@@ -1584,160 +1611,6 @@ return [
             'update-success'    => 'Uloga uspješno ažurirana',
         ],
     ],
-
-    'acl' => [
-        'addresses'                => 'Adrese',
-        'attribute-families'       => 'Attributne obitelji',
-        'attribute-groups'         => 'Attributne grupe',
-        'attributes'               => 'Attributi',
-        'cancel'                   => 'Otkazati',
-        'catalog'                  => 'Katalog',
-        'categories'               => 'Kategorije',
-        'channels'                 => 'Kanali',
-        'configure'                => 'Konfigurirati',
-        'configuration'            => 'Konfiguracija',
-        'copy'                     => 'Kopirati',
-        'create'                   => 'Kreirati',
-        'currencies'               => 'Valute',
-        'dashboard'                => 'Nadzorna ploča',
-        'data-transfer'            => 'Prenos podataka',
-        'delete'                   => 'Izbrisati',
-        'edit'                     => 'Uredi',
-        'email-templates'          => 'Predlošci e-pošte',
-        'events'                   => 'Događaji',
-        'groups'                   => 'Grupacije',
-        'import'                   => 'Uvoz',
-        'imports'                  => 'Uvozi',
-        'invoices'                 => 'Fakture',
-        'locales'                  => 'Lokalizacije',
-        'magic-ai'                 => 'Magija AI',
-        'marketing'                => 'Marketing',
-        'newsletter-subscriptions' => 'Pretplate na biltene',
-        'note'                     => 'Bilješka',
-        'orders'                   => 'Narudžbe',
-        'products'                 => 'Proizvodi',
-        'promotions'               => 'Promocije',
-        'refunds'                  => 'Povrati',
-        'reporting'                => 'Izvještavanje',
-        'reviews'                  => 'Recenzije',
-        'roles'                    => 'Uloge',
-        'sales'                    => 'Prodaja',
-        'search-seo'               => 'Tražilica i SEO',
-        'search-synonyms'          => 'Sinonimi pretrage',
-        'search-terms'             => 'Pojmovi pretrage',
-        'settings'                 => 'Postavke',
-        'shipments'                => 'Pošiljke',
-        'sitemaps'                 => 'Sitemapovi',
-        'subscribers'              => 'Pretplatnici',
-        'tax-categories'           => 'Porezne kategorije',
-        'tax-rates'                => 'Porezne stope',
-        'taxes'                    => 'Porezi',
-        'themes'                   => 'Teme',
-        'integration'              => 'Integracija',
-        'url-rewrites'             => 'Preusmjeravanja URL-ova',
-        'users'                    => 'Korisnici',
-        'category_fields'          => 'Polja kategorija',
-        'view'                     => 'Pogled',
-        'execute'                  => 'Izvrši',
-        'history'                  => 'Povijest',
-        'restore'                  => 'Obnoviti',
-        'integrations'             => 'Integracije',
-        'api'                      => 'API',
-        'tracker'                  => 'Praćenje poslova',
-        'imports'                  => 'Uvozi',
-        'exports'                  => 'Izvozi',
-        'mass-update'              => 'Masovno ažuriranje',
-        'mass-delete'              => 'Masovno brisanje',
-    ],
-
-    'errors' => [
-        'dashboard' => 'Nadzorna ploča',
-        'go-back'   => 'Idi nazad',
-        'support'   => 'Ako problem i dalje traje, obratite nam se na <a href=":link" class=":class">:email</a> za pomoć.',
-
-        '404' => [
-            'description' => 'Ups! Čini se da tražena stranica odmara. Čini se da nismo mogli pronaći ono što tražite.',
-            'title'       => '404 Stranica nije pronađena',
-        ],
-
-        '401' => [
-            'description' => 'Ups! Čini se da nemate dozvolu za pristup ovoj stranici. Čini se da nemate potrebne akreditive.',
-            'title'       => '401 Nepozvoljeno',
-            'message'     => 'Autorizacija nije uspjela zbog nevaljanih akreditiva ili isteka tokena.',
-        ],
-
-        '403' => [
-            'description' => 'Ups! Ova stranica je zabranjena. Čini se da nemate dozvolu za pregled ovog sadržaja.',
-            'title'       => '403 Zabranjeno',
-        ],
-
-        '413' => [
-            'description' => 'Ups! Čini se da pokušavate prenijeti preveliku datoteku. Ako želite prenijeti istu, molimo ažurirajte postavke PHP konfiguracije.',
-            'title'       => '413 Sadržaj je prevelik',
-        ],
-
-        '419' => [
-            'description' => 'Ups! Vaša sesija je istekla. Molimo osvježite stranicu i prijavite se ponovno kako biste nastavili.',
-            'title'       => '419 Sesija je istekla',
-        ],
-
-        '500' => [
-            'description' => 'Ups! Nešto nije u redu. Čini se da imamo problema s učitavanjem tražene stranice.',
-            'title'       => '500 Unutarnja greška poslužitelja',
-        ],
-
-        '503' => [
-            'description' => 'Ups! Čini se da smo trenutno nedostupni zbog održavanja. Molimo pokušajte ponovno kasnije.',
-            'title'       => '503 Usluga nedostupna',
-        ],
-    ],
-
-    'export' => [
-        'csv'                  => 'CSV',
-        'download'             => 'Preuzmi',
-        'export'               => 'Brzi izvoz',
-        'no-records'           => 'Nema zapisa za izvoz',
-        'xls'                  => 'XLS',
-        'xlsx'                 => 'XLSX',
-        'with-media'           => 'S medijima',
-        'export-success'       => 'Izvoz je uspješan!',
-        'error'                => 'Nešto je pošlo po zlu!',
-        'product-not-selected' => 'Nema odabranih proizvoda za brzi izvoz',
-    ],
-
-    'validations' => [
-        'slug-being-used' => 'Ova slug je u upotrebi u kategorijama ili proizvodima.',
-        'slug-reserved'   => 'Ova slug je rezervirana.',
-        'invalid-locale'  => 'Nevažeći lokaliteti :locales',
-    ],
-
-    'footer' => [
-        'copy-right' => 'Napaja <a href="https://unopim.com/" target="_blank">UnoPim</a>, Zajednički projekt od <a href="https://webkul.com/" target="_blank">Webkul</a>',
-    ],
-
-    'emails' => [
-        'dear'   => 'Poštovani :admin_name',
-        'thanks' => 'Ako vam je potrebna bilo kakva pomoć, slobodno nam se obratite na <a href=":link" style=":style">:email</a>.<br/>Hvala!',
-
-        'admin' => [
-            'forgot-password' => [
-                'description'    => 'Primili ste ovaj e-mail jer smo zaprimili zahtjev za resetiranje lozinke za vaš račun.',
-                'greeting'       => 'Zaboravljena lozinka!',
-                'reset-password' => 'Resetirajte lozinku',
-                'subject'        => 'E-mail za resetiranje lozinke',
-            ],
-        ],
-    ],
-
-    'common' => [
-        'yes'     => 'Da',
-        'no'      => 'Ne',
-        'true'    => 'Ispravno',
-        'false'   => 'Neispravno',
-        'enable'  => 'Omogućeno',
-        'disable' => 'Onemogućeno',
-    ],
-
     'configuration' => [
         'index' => [
             'delete'          => 'Izbriši',
@@ -1746,50 +1619,69 @@ return [
             'save-message'    => 'Konfiguracija uspješno spremljena',
             'search'          => 'Pretraži',
             'title'           => 'Konfiguracija',
-
-            'general' => [
-                'info'  => '',
-                'title' => 'Opće',
-
+            'general'         => [
+                'info'    => '',
+                'title'   => 'Opće',
                 'general' => [
                     'info'  => '',
                     'title' => 'Opće',
                 ],
-
                 'magic-ai' => [
-                    'info'  => 'Postavite Magic AI opcije.',
-                    'title' => 'Magic AI',
-
+                    'info'     => 'Postavite Magic AI opcije.',
+                    'title'    => 'Magic AI',
                     'settings' => [
-                        'api-key'        => 'API ključ',
-                        'enabled'        => 'Omogućeno',
-                        'llm-api-domain' => 'LLM API domena',
-                        'organization'   => 'ID organizacije',
-                        'title'          => 'Opće postavke',
-                        'title-info'     => 'Poboljšajte svoje iskustvo s Magic AI unosom svog ekskluzivnog API ključa i označite odgovarajuću organizaciju za lakšu integraciju. Preuzmite kontrolu nad svojim OpenAI vjerodajnicama i prilagodite postavke prema vašim specifičnim potrebama.',
+                        'enabled'     => 'Omogućeno',
+                        'ai-platform' => 'Zadana platforma',
+                        'ai-model'    => 'Zadani model',
+                        'title'       => 'Opće postavke',
+                        'title-info'  => 'Poboljšajte svoje iskustvo s Magic AI unosom svog ekskluzivnog API ključa i označite odgovarajuću organizaciju za lakšu integraciju. Preuzmite kontrolu nad svojim OpenAI vjerodajnicama i prilagodite postavke prema vašim specifičnim potrebama.',
                     ],
-
-                    'translation'   => [
-                        'title'                  => 'Prijevod',
-                        'enabled'                => 'Omogućeno',
-                        'title-info'             => 'Ova značajka omogućuje Magic AI-u prevođenje teksta, omogućujući vam jednostavno pretvaranje teksta s jednog jezika na drugi.',
-                        'global-source-channel'  => 'Izvorni kanal',
-                        'global-source-locale'   => 'Izvorni jezik',
-                        'translation-model'      => 'Model prijevoda',
-                        'replace-existing-value' => 'Zamijeni postojeću vrijednost',
-                        'target-channel'         => 'Ciljani kanal',
-                        'target-locales'         => 'Ciljani jezici',
+                    'image-generation' => [
+                        'enabled'     => 'Enabled',
+                        'ai-platform' => 'Zadana platforma',
+                        'ai-model'    => 'Zadani model',
+                        'title'       => 'Generiranje slika',
+                        'title-info'  => 'Configure the default AI platform and model for generating product images. Only platforms that support image generation (OpenAI, Gemini, xAI) are listed.',
+                    ],
+                    'translation' => [
+                        'title'                       => 'Prijevod',
+                        'enabled'                     => 'Omogućeno',
+                        'title-info'                  => 'Ova značajka omogućuje Magic AI-u prevođenje teksta, omogućujući vam jednostavno pretvaranje teksta s jednog jezika na drugi.',
+                        'ai-platform'                 => 'Zadana platforma',
+                        'global-source-channel'       => 'Izvorni kanal',
+                        'global-source-locale'        => 'Izvorni jezik',
+                        'translation-model'           => 'Model prijevoda',
+                        'replace-existing-value'      => 'Zamijeni postojeću vrijednost',
+                        'target-channel'              => 'Ciljani kanal',
+                        'target-locales'              => 'Ciljani jezici',
+                        'replace-existing-value-info' => 'Zamijeni postojeću vrijednost ako već postoji.',
+                    ],
+                    'agentic-pim' => [
+                        'title'                     => 'Agentski PIM',
+                        'title-info'                => 'Konfigurirajte AI agentski chat, autonomne tijekove obogaćivanja i praćenje kvalitete. Ove značajke omogućuju razgovorno upravljanje proizvodima i proaktivno održavanje kataloga.',
+                        'enabled'                   => 'Omogući AI agentski chat',
+                        'enabled-info'              => 'Omogućite plutajući AI chat widget za razgovorno upravljanje proizvodima s više od 27 akcija alata.',
+                        'max-steps'                 => 'Maks. koraka agenta po krugu',
+                        'max-steps-info'            => 'Maksimalan broj iteracija poziva alata koje AI agent može izvršiti po korisničkoj poruci. Veće vrijednosti omogućuju složenije višekoračne operacije.',
+                        'daily-token-budget'        => 'Dnevni proračun tokena',
+                        'daily-token-budget-info'   => 'Maksimalni AI tokeni (ulaz + izlaz) koji se mogu potrošiti dnevno za sve korisnike. Postavite na 0 za neograničeno. Pomaže kontrolirati troškove API-ja.',
+                        'auto-enrichment'           => 'Automatsko obogaćivanje pri kreiranju proizvoda',
+                        'auto-enrichment-info'      => 'Automatski generirajte nedostajuće opise, kategorije i SEO sadržaj kada se kreiraju ili uvoze novi proizvodi.',
+                        'quality-monitor'           => 'Monitor kvalitete kataloga',
+                        'quality-monitor-info'      => 'Pokrenite zakazana skeniranja za otkrivanje nepotpunih proizvoda, nedostajućih prijevoda, dupliciranih unosa i anomalija cijena.',
+                        'confidence-threshold'      => 'Prag pouzdanosti',
+                        'confidence-threshold-info' => 'Minimalni rezultat pouzdanosti (0-1) za automatsku primjenu promjena generiranih AI-jem. Ispod ovog praga, promjene se stavljaju u red čekanja za ljudsku provjeru.',
+                        'approval-mode'             => 'Način odobravanja promjena',
+                        'approval-mode-info'        => 'Kontrolira kako AI agent upravlja operacijama pisanja. "Potvrdi i primijeni": agent predlaže vrijednosti u chatu, čeka potvrdu, zatim izvršava. "Stroga potvrda": isto, ali također provjerava nakon svake promjene. "Samo predloži": opisuje promjene, ali nikada ne izvršava (samo za čitanje).',
                     ],
                 ],
             ],
         ],
-
         'integrations' => [
             'index' => [
                 'create-btn' => 'Kreiraj',
                 'title'      => 'Integracije',
-
-                'datagrid' => [
+                'datagrid'   => [
                     'delete'          => 'Izbriši',
                     'edit'            => 'Uredi',
                     'id'              => 'ID',
@@ -1799,7 +1691,6 @@ return [
                     'permission-type' => 'Vrsta dopuštenja',
                 ],
             ],
-
             'create' => [
                 'access-control' => 'Kontrola pristupa',
                 'all'            => 'Svi',
@@ -1812,7 +1703,6 @@ return [
                 'save-btn'       => 'Spremi',
                 'title'          => 'Nova integracija',
             ],
-
             'edit' => [
                 'access-control' => 'Kontrola pristupa',
                 'all'            => 'Svi',
@@ -1830,7 +1720,6 @@ return [
                 'save-btn'       => 'Spremi',
                 'title'          => 'Uredi integraciju',
             ],
-
             'being-used'                     => 'API integracija već se koristi u Admin korisniku',
             'create-success'                 => 'API integracija uspješno kreirana',
             'delete-failed'                  => 'API integracija nije uspjela',
@@ -1841,40 +1730,149 @@ return [
             're-generate-secret-key-success' => 'API tajni ključ je uspješno ponovno generiran',
             'client-not-found'               => 'Klijent nije pronađen',
         ],
-
         'prompt' => [
             'datagrid' => [
-                'id'            => 'ID',
-                'title'         => 'Naslov',
-                'prompt'        => 'Upit',
-                'type'          => 'Tip',
-                'created-at'    => 'Kreirano',
-                'updated-at'    => 'Ažurirano',
-                'actions'       => 'Radnje',
-                'edit'          => 'Uredi',
-                'delete'        => 'Obriši',
-                'product'       => 'Proizvod',
-                'category'      => 'Kategorija',
+                'id'               => 'ID',
+                'title'            => 'Naslov',
+                'prompt'           => 'Upit',
+                'type'             => 'Tip',
+                'purpose'          => 'Namjena',
+                'text-generation'  => 'Generiranje teksta',
+                'image-generation' => 'Generiranje slika',
+                'translation'      => 'Prijevod',
+                'created-at'       => 'Kreirano',
+                'updated-at'       => 'Ažurirano',
+                'actions'          => 'Radnje',
+                'edit'             => 'Uredi',
+                'delete'           => 'Obriši',
+                'product'          => 'Proizvod',
+                'category'         => 'Kategorija',
             ],
             'create' => [
-                'title'         => 'Upit',
-                'create-btn'    => 'Kreiraj upit',
-                'edit-title'    => 'Uredi upit',
-                'create-title'  => 'Kreiraj novi upit',
-                'label-title'   => 'Naslov',
-                'type'          => 'Tip',
-                'prompt'        => 'Upit',
-                'save-btn'      => 'Spremi upit',
+                'title'        => 'Upit',
+                'create-btn'   => 'Kreiraj upit',
+                'edit-title'   => 'Uredi upit',
+                'create-title' => 'Kreiraj novi upit',
+                'label-title'  => 'Naslov',
+                'purpose'      => 'Namjena',
+                'type'         => 'Tip',
+                'prompt'       => 'Upit',
+                'save-btn'     => 'Spremi upit',
             ],
             'message' => [
-                'save-success'      => 'Upit je uspješno spremljen.',
-                'update-success'    => 'Upit je uspješno ažuriran.',
-                'delete-success'    => 'Upit je uspješno obrisan.',
-                'delete-fail'       => 'Brisanje upita nije uspjelo.',
+                'save-success'   => 'Upit je uspješno spremljen.',
+                'update-success' => 'Upit je uspješno ažuriran.',
+                'delete-success' => 'Upit je uspješno obrisan.',
+                'delete-fail'    => 'Brisanje upita nije uspjelo.',
+            ],
+        ],
+        'system-prompt' => [
+            'datagrid' => [
+                'id'          => 'ID',
+                'title'       => 'Naslov',
+                'tone'        => 'Ton',
+                'max-tokens'  => 'Maks. tokeni',
+                'temperature' => 'Temperatura',
+                'status'      => 'Status',
+                'created-at'  => 'Datum stvaranja',
+                'updated-at'  => 'Datum ažuriranja',
+                'actions'     => 'Radnje',
+                'save'        => 'Spremi',
+                'edit'        => 'Uredi',
+                'delete'      => 'obriši',
+            ],
+            'create' => [
+                'title'        => 'Sistemski prompt',
+                'create-btn'   => 'Stvori sistemski prompt',
+                'edit-title'   => 'Uredi sistemski prompt',
+                'create-title' => 'Stvori novi sistemski prompt',
+                'label-title'  => 'Naslov',
+                'max-tokens'   => 'Maks. izlazni tokeni',
+                'temperature'  => 'Temperatura',
+                'type'         => 'Tip',
+                'prompt'       => 'Prompt',
+                'save-btn'     => 'Spremi prompt',
+                'prompt-tone'  => 'Ton prompta',
+            ],
+            'message' => [
+                'save-success'   => 'Sistemski prompt uspješno spremljen.',
+                'update-success' => 'Sistemski prompt uspješno ažuriran.',
+                'delete-success' => 'Sistemski prompt uspješno obrisan.',
+                'delete-fail'    => 'Brisanje sistemskog prompta nije uspjelo.',
+            ],
+        ],
+        'platform' => [
+            'title'           => 'AI Platforms',
+            'create-btn'      => 'Dodaj platformu',
+            'create-title'    => 'Dodaj AI platformu',
+            'edit-title'      => 'Uredi AI platformu',
+            'save-btn'        => 'Spremi',
+            'saving'          => 'Spremanje',
+            'test-connection' => 'Testiraj vezu',
+            'setup'           => [
+                'title'              => 'Započnite s Magic AI',
+                'description'        => 'Povežite svog pružatelja AI usluga kako biste otključali generiranje sadržaja, stvaranje slika i prijevod pokretan AI-jem. Dodajte svoju prvu platformu za početak.',
+                'step-1'             => 'Odaberite pružatelja',
+                'step-2'             => 'Unesite svoj API ključ',
+                'step-3'             => 'Odaberite modele i spremite',
+                'add-first'          => 'Dodajte svoju prvu platformu',
+                'no-default-warning' => 'Zadana platforma nije postavljena. Postavite jednu platformu kao zadanu kako biste omogućili AI značajke u cijeloj aplikaciji.',
+                'no-platform-hint'   => 'Još nema konfiguriranih platformi. Idite na karticu Platforme kako biste dodali prvog pružatelja AI usluga.',
+                'lightning-icon'     => 'Magic AI',
+                'warning-icon'       => 'Upozorenje',
+            ],
+            'testing'         => 'Testiranje',
+            'fetch-models'    => 'Dohvati modele',
+            'fetching-models' => 'Dohvaćanje',
+            'set-default'     => 'Postavi kao zadano',
+            'datagrid'        => [
+                'label'      => 'Oznaka',
+                'provider'   => 'Pružatelj',
+                'models'     => 'Modeli',
+                'default'    => 'Zadano',
+                'status'     => 'Status',
+                'created-at' => 'Datum stvaranja',
+                'edit'       => 'Uredi',
+                'delete'     => 'Obriši',
+            ],
+            'fields' => [
+                'label'                    => 'Oznaka',
+                'provider'                 => 'Pružatelj',
+                'select-provider'          => '-- Odaberite pružatelja --',
+                'api-url'                  => 'API URL',
+                'api-url-hint'             => 'Unaprijed popunjeno zadanom krajnjom točkom. Uredite samo ako koristite proxy ili prilagođeno postavljanje.',
+                'api-key'                  => 'API ključ',
+                'models'                   => 'Modeli',
+                'custom-model-placeholder' => 'Unesite prilagođeni ID modela...',
+                'add'                      => 'Dodaj',
+                'enter-key-to-fetch'       => 'Unesite svoj API ključ iznad kako biste automatski dohvatili dostupne modele.',
+                'search-models'            => 'Pretraži modele...',
+                'no-models-match'          => 'Nijedan model ne odgovara vašem pretraživanju.',
+                'azure-deployment'         => 'Naziv postavljanja',
+                'azure-api-version'        => 'Verzija API-ja',
+                'is-default'               => 'Postavi kao zadano',
+                'status'                   => 'Status',
+                'use-default'              => '-- Koristi zadanu platformu --',
+                'use-default-hint'         => 'Ostavite prazno za korištenje platforme označene kao zadana. Platforme označene s * su zadane.',
+                'no-image-platform'        => 'Nije konfigurirana platforma s podrškom za slike. Prvo dodajte platformu OpenAI, Gemini ili xAI.',
+                'image-platform-hint'      => 'Prikazane su samo platforme koje podržavaju generiranje slika (OpenAI, Gemini, xAI).',
+                'remove-model'             => 'Ukloni model :model',
+                'invalid-model-name'       => 'Nevažeći naziv modela. Koristite samo slova, brojeve, crtice, točke, dvotočke i kose crte (npr. gpt-4o, claude-3-sonnet).',
+            ],
+            'message' => [
+                'save-success'          => 'Platforma uspješno spremljena.',
+                'update-success'        => 'Platforma uspješno ažurirana.',
+                'delete-success'        => 'Platforma uspješno obrisana.',
+                'delete-fail'           => 'Brisanje platforme nije uspjelo.',
+                'cannot-delete-default' => 'Nije moguće obrisati jedinu zadanu platformu.',
+                'set-default-success'   => 'Platforma uspješno postavljena kao zadana.',
+                'test-success'          => 'Veza uspješno provjerena!',
+                'test-fail'             => 'Test veze nije uspio',
+                'fetch-models-fail'     => 'Dohvaćanje modela nije uspjelo',
+                'invalid-model-names'   => 'Nevažeći nazivi modela: :names. Nazivi modela moraju započinjati slovom ili brojem i sadržavati samo slova, brojeve, crtice, točke, dvotočke i kose crte.',
             ],
         ],
     ],
-
     'components' => [
         'layouts' => [
             'header' => [
@@ -1885,7 +1883,6 @@ return [
                 'notifications' => 'Obavijesti',
                 'visit-shop'    => 'Posjetite trgovinu',
             ],
-
             'sidebar' => [
                 'attribute-families' => 'Grupe atributa',
                 'attribute-groups'   => 'Grupe atributa',
@@ -1919,45 +1916,44 @@ return [
                 'general-tab'        => 'Konfiguracija',
             ],
         ],
-
         'datagrid' => [
             'index' => [
                 'no-records-selected'              => 'Nijedna stavka nije odabrana.',
                 'must-select-a-mass-action-option' => 'Morate odabrati opciju masovne akcije.',
                 'must-select-a-mass-action'        => 'Morate odabrati masovnu akciju.',
             ],
-
             'toolbar' => [
-                'length-of' => ':length od',
-                'of'        => 'od',
-                'per-page'  => 'Po stranici',
-                'results'   => ':total Rezultata',
-                'selected'  => ':total Odabrano',
-
+                'length-of'    => ':length od',
+                'of'           => 'od',
+                'per-page'     => 'Po stranici',
+                'results'      => ':total Rezultata',
+                'selected'     => ':total Odabrano',
                 'mass-actions' => [
                     'submit'        => 'Pošalji',
                     'select-option' => 'Odaberite opciju',
                     'select-action' => 'Odaberite akciju',
                 ],
-
                 'filter' => [
                     'title' => 'Filtriraj',
                 ],
-
                 'search_by' => [
                     'code'       => 'Pretraži prema kodu',
                     'code_or_id' => 'Pretraži prema kodu ili ID-u',
                 ],
-
                 'search' => [
                     'title' => 'Pretraži',
                 ],
-
                 'manage-columns' => [
                     'title' => 'Stupcima',
                 ],
+                'pagination' => [
+                    'first-page'    => 'Prva stranica',
+                    'previous-page' => 'Prethodna stranica',
+                    'next-page'     => 'Sljedeća stranica',
+                    'last-page'     => 'Posljednja stranica',
+                    'page-number'   => 'Broj stranice',
+                ],
             ],
-
             'filters' => [
                 'select'   => 'Odaberite',
                 'title'    => 'Primijeni filtre',
@@ -1968,17 +1964,14 @@ return [
                         'no-results'        => 'Nema rezultata...',
                     ],
                 ],
-
                 'custom-filters' => [
                     'clear-all' => 'Izbriši sve',
                     'title'     => 'Prilagođeni filtri',
                 ],
-
                 'boolean-options' => [
                     'false' => 'Netočno',
                     'true'  => 'Točno',
                 ],
-
                 'date-options' => [
                     'last-month'        => 'Prošli mjesec',
                     'last-six-months'   => 'Posljednjih 6 mjeseci',
@@ -1990,12 +1983,10 @@ return [
                     'yesterday'         => 'Jučer',
                 ],
             ],
-
             'table' => [
                 'actions'              => 'Akcije',
                 'no-records-available' => 'Nema dostupnih zapisa.',
             ],
-
             'manage-columns' => [
                 'title'             => 'Upravljanje stupcima',
                 'available-columns' => 'Dostupni stupci',
@@ -2003,7 +1994,6 @@ return [
                 'apply-btn'         => 'primijeniti',
             ],
         ],
-
         'modal' => [
             'confirm' => [
                 'agree-btn'    => 'Prihvati',
@@ -2011,14 +2001,12 @@ return [
                 'message'      => 'Jeste li sigurni da želite izvršiti ovu akciju?',
                 'title'        => 'Jeste li sigurni?',
             ],
-
             'delete' => [
                 'agree-btn'    => 'Izbriši',
                 'disagree-btn' => 'Otkaži',
                 'message'      => 'Jeste li sigurni da želite izbrisati?',
                 'title'        => 'Potvrda brisanja',
             ],
-
             'history' => [
                 'title'           => 'Pregled povijesti',
                 'subtitle'        => 'Brzo pregledajte svoje ažuriranja i promjene.',
@@ -2032,7 +2020,6 @@ return [
                 'no-history'      => 'Povijest nije pronađena',
             ],
         ],
-
         'products' => [
             'search' => [
                 'add-btn'       => 'Dodaj odabrani proizvod',
@@ -2044,20 +2031,18 @@ return [
                 'title'         => 'Odaberite proizvode',
             ],
         ],
-
         'media' => [
             'images' => [
                 'add-image-btn'      => 'Dodaj sliku',
-                'ai-add-image-btn'   => 'Magija AI',
                 'generate-with-ai'   => 'Generiraj s AI-om',
                 'upload-from-device' => 'Prenesi s uređaja',
                 'cancel'             => 'Odustani',
+                'ai-add-image-btn'   => 'Magija AI',
                 'ai-btn-info'        => 'Generiraj sliku',
                 'allowed-types'      => 'png, jpeg, jpg',
                 'not-allowed-error'  => 'Dozvoljeni su samo datoteke s slikama (.jpeg, .jpg, .png, ..).',
                 'upload-media-btn'   => 'Prenesi medije',
-
-                'ai-generation' => [
+                'ai-generation'      => [
                     '1024x1024'        => '1024x1024',
                     '1024x1792'        => '1024x1792',
                     '1792x1024'        => '1792x1024',
@@ -2077,7 +2062,6 @@ return [
                     'standard'         => 'Standardno',
                     'title'            => 'Generacija slike pomoću AI',
                 ],
-
                 'placeholders' => [
                     'front'     => 'Prednja strana',
                     'next'      => 'Sljedeća',
@@ -2086,23 +2070,22 @@ return [
                     'zoom'      => 'Uvećaj',
                 ],
             ],
-
+            'gallery' => [
+                'not-allowed-error' => 'Dopuštene su samo slikovne i video datoteke. (.mp4, .jpg ..)',
+            ],
             'videos' => [
                 'add-video-btn'     => 'Dodaj video',
                 'allowed-types'     => 'mp4, webm, mkv',
                 'not-allowed-error' => 'Dozvoljeni su samo video datoteke (.mp4, .mov, .ogg ..).',
             ],
-
             'files' => [
                 'add-file-btn'      => 'Dodaj datoteku',
                 'allowed-types'     => 'pdf',
                 'not-allowed-error' => 'Dozvoljeni su samo PDF datoteke',
             ],
         ],
-
         'tinymce' => [
-            'ai-btn-tile' => 'Magija AI',
-
+            'ai-btn-tile'   => 'Magija AI',
             'ai-generation' => [
                 'apply'                  => 'Primijeni',
                 'generate'               => 'Generiraj',
@@ -2111,7 +2094,14 @@ return [
                 'generating'             => 'Generiranje...',
                 'prompt'                 => 'Upit',
                 'title'                  => 'Pomoć AI',
+                'platform'               => 'Platforma',
                 'model'                  => 'Model',
+                'rich-preview'           => 'Obogaćeni pregled',
+                'system-prompt'          => 'Sistemski prompt',
+                'select-system-prompt'   => 'Odaberite sistemski prompt',
+                'tone-instructions'      => 'Ton / Upute',
+                'max-tokens'             => 'Maks. tokeni',
+                'temperature'            => 'Temperatura',
                 'gpt-3-5-turbo'          => 'OpenAI gpt-3.5-turbo',
                 'llama2'                 => 'Llama 2',
                 'mistral'                => 'Mistral',
@@ -2128,7 +2118,147 @@ return [
             ],
         ],
     ],
-
+    'acl' => [
+        'addresses'                => 'Adrese',
+        'attribute-families'       => 'Attributne obitelji',
+        'attribute-groups'         => 'Attributne grupe',
+        'attributes'               => 'Attributi',
+        'cancel'                   => 'Otkazati',
+        'catalog'                  => 'Katalog',
+        'categories'               => 'Kategorije',
+        'channels'                 => 'Kanali',
+        'configure'                => 'Konfigurirati',
+        'configuration'            => 'Konfiguracija',
+        'copy'                     => 'Kopirati',
+        'create'                   => 'Kreirati',
+        'currencies'               => 'Valute',
+        'dashboard'                => 'Nadzorna ploča',
+        'data-transfer'            => 'Prenos podataka',
+        'delete'                   => 'Izbrisati',
+        'edit'                     => 'Uredi',
+        'email-templates'          => 'Predlošci e-pošte',
+        'events'                   => 'Događaji',
+        'groups'                   => 'Grupacije',
+        'import'                   => 'Uvoz',
+        'imports'                  => 'Uvozi',
+        'invoices'                 => 'Fakture',
+        'locales'                  => 'Lokalizacije',
+        'magic-ai'                 => 'Magija AI',
+        'magic-ai-general'         => 'Općenito',
+        'magic-ai-prompt'          => 'Prompt',
+        'magic-ai-system-prompt'   => 'Sistemski prompt',
+        'marketing'                => 'Marketing',
+        'newsletter-subscriptions' => 'Pretplate na biltene',
+        'note'                     => 'Bilješka',
+        'orders'                   => 'Narudžbe',
+        'products'                 => 'Proizvodi',
+        'promotions'               => 'Promocije',
+        'refunds'                  => 'Povrati',
+        'reporting'                => 'Izvještavanje',
+        'reviews'                  => 'Recenzije',
+        'roles'                    => 'Uloge',
+        'sales'                    => 'Prodaja',
+        'search-seo'               => 'Tražilica i SEO',
+        'search-synonyms'          => 'Sinonimi pretrage',
+        'search-terms'             => 'Pojmovi pretrage',
+        'settings'                 => 'Postavke',
+        'shipments'                => 'Pošiljke',
+        'sitemaps'                 => 'Sitemapovi',
+        'subscribers'              => 'Pretplatnici',
+        'tax-categories'           => 'Porezne kategorije',
+        'tax-rates'                => 'Porezne stope',
+        'taxes'                    => 'Porezi',
+        'themes'                   => 'Teme',
+        'integration'              => 'Integracija',
+        'url-rewrites'             => 'Preusmjeravanja URL-ova',
+        'users'                    => 'Korisnici',
+        'category_fields'          => 'Polja kategorija',
+        'view'                     => 'Pogled',
+        'execute'                  => 'Izvrši',
+        'history'                  => 'Povijest',
+        'restore'                  => 'Obnoviti',
+        'integrations'             => 'Integracije',
+        'api'                      => 'API',
+        'tracker'                  => 'Praćenje poslova',
+        'exports'                  => 'Izvozi',
+        'mass-update'              => 'Masovno ažuriranje',
+        'mass-delete'              => 'Masovno brisanje',
+    ],
+    'errors' => [
+        'dashboard' => 'Nadzorna ploča',
+        'go-back'   => 'Idi nazad',
+        'support'   => 'Ako problem i dalje traje, obratite nam se na <a href=":link" class=":class">:email</a> za pomoć.',
+        '404'       => [
+            'description' => 'Ups! Čini se da tražena stranica odmara. Čini se da nismo mogli pronaći ono što tražite.',
+            'title'       => '404 Stranica nije pronađena',
+        ],
+        '401' => [
+            'description' => 'Ups! Čini se da nemate dozvolu za pristup ovoj stranici. Čini se da nemate potrebne akreditive.',
+            'title'       => '401 Nepozvoljeno',
+            'message'     => 'Autorizacija nije uspjela zbog nevaljanih akreditiva ili isteka tokena.',
+        ],
+        '403' => [
+            'description' => 'Ups! Ova stranica je zabranjena. Čini se da nemate dozvolu za pregled ovog sadržaja.',
+            'title'       => '403 Zabranjeno',
+        ],
+        '413' => [
+            'description' => 'Ups! Čini se da pokušavate prenijeti preveliku datoteku. Ako želite prenijeti istu, molimo ažurirajte postavke PHP konfiguracije.',
+            'title'       => '413 Sadržaj je prevelik',
+        ],
+        '419' => [
+            'description' => 'Ups! Vaša sesija je istekla. Molimo osvježite stranicu i prijavite se ponovno kako biste nastavili.',
+            'title'       => '419 Sesija je istekla',
+        ],
+        '500' => [
+            'description' => 'Ups! Nešto nije u redu. Čini se da imamo problema s učitavanjem tražene stranice.',
+            'title'       => '500 Unutarnja greška poslužitelja',
+        ],
+        '503' => [
+            'description' => 'Ups! Čini se da smo trenutno nedostupni zbog održavanja. Molimo pokušajte ponovno kasnije.',
+            'title'       => '503 Usluga nedostupna',
+        ],
+    ],
+    'export' => [
+        'csv'                  => 'CSV',
+        'download'             => 'Preuzmi',
+        'export'               => 'Brzi izvoz',
+        'no-records'           => 'Nema zapisa za izvoz',
+        'xls'                  => 'XLS',
+        'xlsx'                 => 'XLSX',
+        'with-media'           => 'S medijima',
+        'export-success'       => 'Izvoz je uspješan!',
+        'error'                => 'Nešto je pošlo po zlu!',
+        'product-not-selected' => 'Nema odabranih proizvoda za brzi izvoz',
+    ],
+    'validations' => [
+        'slug-being-used' => 'Ova slug je u upotrebi u kategorijama ili proizvodima.',
+        'slug-reserved'   => 'Ova slug je rezervirana.',
+        'invalid-locale'  => 'Nevažeći lokaliteti :locales',
+    ],
+    'footer' => [
+        'copy-right' => 'Napaja <a href="https://unopim.com/" target="_blank">UnoPim</a>, Zajednički projekt od <a href="https://webkul.com/" target="_blank">Webkul</a>',
+    ],
+    'emails' => [
+        'dear'   => 'Poštovani :admin_name',
+        'thanks' => 'Ako vam je potrebna bilo kakva pomoć, slobodno nam se obratite na <a href=":link" style=":style">:email</a>.<br/>Hvala!',
+        'admin'  => [
+            'forgot-password' => [
+                'description'    => 'Primili ste ovaj e-mail jer smo zaprimili zahtjev za resetiranje lozinke za vaš račun.',
+                'greeting'       => 'Zaboravljena lozinka!',
+                'reset-password' => 'Resetirajte lozinku',
+                'subject'        => 'E-mail za resetiranje lozinke',
+            ],
+        ],
+    ],
+    'common' => [
+        'yes'            => 'Da',
+        'no'             => 'Ne',
+        'true'           => 'Ispravno',
+        'false'          => 'Neispravno',
+        'enable'         => 'Omogućeno',
+        'disable'        => 'Onemogućeno',
+        'no-match-found' => 'Nije pronađeno podudaranje!',
+    ],
     'default-prompt' => [
         'detailed' => [
             'title'  => 'Detaljan Opis Proizvoda',

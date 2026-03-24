@@ -4,6 +4,7 @@ namespace Webkul\AiAgent\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;
+use Illuminate\View\View;
 use Webkul\AiAgent\DataGrids\Agent\AgentDataGrid;
 use Webkul\AiAgent\Http\Requests\AgentForm;
 use Webkul\AiAgent\Repositories\AgentRepository;
@@ -14,12 +15,20 @@ class AgentController extends Controller
     public function __construct(
         protected AgentRepository $agentRepository,
         protected CredentialRepository $credentialRepository,
-    ) {}
+    ) {
+        $this->middleware(function ($request, $next) {
+            if (! bouncer()->hasPermission('ai-agent.agents')) {
+                abort(401, trans('ai-agent::app.common.unauthorized'));
+            }
+
+            return $next($request);
+        });
+    }
 
     /**
      * Display a listing of agents.
      *
-     * @return \Illuminate\View\View|\Illuminate\Http\JsonResponse
+     * @return View|JsonResponse
      */
     public function index()
     {
@@ -33,7 +42,7 @@ class AgentController extends Controller
     /**
      * Show the form for creating a new agent.
      *
-     * @return \Illuminate\View\View
+     * @return View
      */
     public function create()
     {
@@ -58,11 +67,11 @@ class AgentController extends Controller
     /**
      * Show the form for editing an agent.
      *
-     * @return \Illuminate\View\View
+     * @return View
      */
     public function edit(int $id)
     {
-        $agent       = $this->agentRepository->findOrFail($id);
+        $agent = $this->agentRepository->findOrFail($id);
         $credentials = $this->credentialRepository->getActiveList();
 
         return view('ai-agent::agents.edit', compact('agent', 'credentials'));

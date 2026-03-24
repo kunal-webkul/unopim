@@ -4,7 +4,7 @@ return [
     'components' => [
         'layouts' => [
             'sidebar' => [
-                'completeness' => 'Completeness',
+                'completeness' => 'Täydellisyys',
             ],
         ],
     ],
@@ -13,21 +13,21 @@ return [
         'families' => [
             'edit' => [
                 'completeness' => [
-                    'update-success'      => 'Compeleteness updated successfully',
-                    'title'               => 'Completeness',
-                    'configure'           => 'Configure Completeness',
-                    'channel-required'    => 'Required in Channels',
-                    'save-btn'            => 'Save',
-                    'back-btn'            => 'Back',
-                    'mass-update-success' => 'Compeleteness updated successfully',
+                    'update-success'      => 'Täydellisyys päivitetty onnistuneesti',
+                    'title'               => 'Täydellisyys',
+                    'configure'           => 'Määritä täydellisyys',
+                    'channel-required'    => 'Vaaditaan kanavissa',
+                    'save-btn'            => 'Tallenna',
+                    'back-btn'            => 'Takaisin',
+                    'mass-update-success' => 'Täydellisyys päivitetty onnistuneesti',
 
                     'datagrid' => [
-                        'code'             => 'Code',
-                        'name'             => 'Name',
-                        'channel-required' => 'Required in Channels',
+                        'code'             => 'Koodi',
+                        'name'             => 'Nimi',
+                        'channel-required' => 'Vaaditaan kanavissa',
 
                         'actions' => [
-                            'change-requirement' => 'Change Completeness Requirement',
+                            'change-requirement' => 'Muuta täydellisyysvaatimusta',
                         ],
                     ],
                 ],
@@ -38,31 +38,42 @@ return [
             'index' => [
                 'datagrid' => [
                     'missing-completeness-setting' => 'N/A',
-                    'completeness'                 => 'Täydellinen',
+                    'completeness'                 => 'Valmis',
                 ],
             ],
 
             'edit' => [
                 'completeness' => [
-                    'title'    => 'Completeness',
-                    'subtitle' => 'Average completeness',
+                    'title'    => 'Täydellisyys',
+                    'subtitle' => 'Keskimääräinen täydellisyys',
                 ],
 
-                'required-attributes' => 'missing required attributes',
+                'required-attributes' => 'puuttuvat pakolliset attribuutit',
             ],
         ],
+    ],
+
+    'notifications' => [
+        'completeness-title'             => 'Täydellisyyslaskenta valmis',
+        'completeness-calculated'        => 'Täydellisyys laskettu :count tuotteelle.',
+        'completeness-calculated-family' => 'Täydellisyys laskettu :count tuotteelle perheessä ":family".',
+        'email-subject'                  => 'Täydellisyyslaskenta valmis',
+        'email-greeting'                 => 'Hei,',
+        'email-body'                     => 'Täydellisyyslaskenta on suoritettu :count tuotteelle.',
+        'email-body-family'              => 'Täydellisyyslaskenta on suoritettu :count tuotteelle attribuuttiperheessä ":family".',
+        'email-footer'                   => 'Voit tarkastella täydellisyystietoja hallintapaneelissasi.',
     ],
 
     'dashboard' => [
         'index' => [
             'completeness' => [
-                'calculated-products' => 'Calculated products',
+                'calculated-products' => 'Lasketut tuotteet',
 
                 'suggestion' => [
-                    'low'     => 'Low completeness, add details to improve.',
-                    'medium'  => 'Keep going, continue adding information.',
-                    'high'    => 'Almost complete, just a few details left.',
-                    'perfect' => 'Product information is fully complete.',
+                    'low'     => 'Alhainen täydellisyys, lisää tietoja parantaaksesi.',
+                    'medium'  => 'Jatka, lisää tietoja edelleen.',
+                    'high'    => 'Lähes valmis, vain muutama yksityiskohta puuttuu.',
+                    'perfect' => 'Tuotetiedot ovat täysin valmiit.',
                 ],
             ],
         ],

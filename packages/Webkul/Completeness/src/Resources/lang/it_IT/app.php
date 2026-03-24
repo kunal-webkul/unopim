@@ -15,7 +15,7 @@ return [
                 'completeness' => [
                     'update-success'      => 'Completezza aggiornata con successo',
                     'title'               => 'Completezza',
-                    'configure'           => 'Configura Completezza',
+                    'configure'           => 'Configura completezza',
                     'channel-required'    => 'Richiesto nei canali',
                     'save-btn'            => 'Salva',
                     'back-btn'            => 'Indietro',
@@ -27,7 +27,7 @@ return [
                         'channel-required' => 'Richiesto nei canali',
 
                         'actions' => [
-                            'change-requirement' => 'Cambia requisito di completezza',
+                            'change-requirement' => 'Modifica requisito di completezza',
                         ],
                     ],
                 ],
@@ -37,7 +37,7 @@ return [
         'products' => [
             'index' => [
                 'datagrid' => [
-                    'missing-completeness-setting' => 'Nessuna impostazione',
+                    'missing-completeness-setting' => 'N/A',
                     'completeness'                 => 'Completo',
                 ],
             ],
@@ -53,16 +53,27 @@ return [
         ],
     ],
 
+    'notifications' => [
+        'completeness-title'             => 'Calcolo completezza terminato',
+        'completeness-calculated'        => 'Completezza calcolata per :count prodotti.',
+        'completeness-calculated-family' => 'Completezza calcolata per :count prodotti nella famiglia ":family".',
+        'email-subject'                  => 'Calcolo completezza terminato',
+        'email-greeting'                 => 'Salve,',
+        'email-body'                     => 'Il calcolo della completezza è stato completato per :count prodotti.',
+        'email-body-family'              => 'Il calcolo della completezza è stato completato per :count prodotti nella famiglia di attributi ":family".',
+        'email-footer'                   => 'Puoi visualizzare i dettagli della completezza nella tua dashboard.',
+    ],
+
     'dashboard' => [
         'index' => [
             'completeness' => [
                 'calculated-products' => 'Prodotti calcolati',
 
                 'suggestion' => [
-                    'low'     => 'Completezza bassa — aggiungi dettagli per migliorare.',
-                    'medium'  => 'Continua, continua ad aggiungere informazioni.',
-                    'high'    => 'Quasi completo, rimangono solo pochi dettagli.',
-                    'perfect' => 'Le informazioni sul prodotto sono completamente complete.',
+                    'low'     => 'Completezza bassa, aggiungi dettagli per migliorare.',
+                    'medium'  => 'Continua così, aggiungi altre informazioni.',
+                    'high'    => 'Quasi completo, mancano solo pochi dettagli.',
+                    'perfect' => 'Le informazioni del prodotto sono completamente complete.',
                 ],
             ],
         ],

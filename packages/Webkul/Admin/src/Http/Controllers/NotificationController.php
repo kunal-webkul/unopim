@@ -2,6 +2,7 @@
 
 namespace Webkul\Admin\Http\Controllers;
 
+use Illuminate\View\View;
 use Webkul\Notification\Repositories\NotificationRepository;
 
 class NotificationController extends Controller
@@ -16,7 +17,7 @@ class NotificationController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\View\View
+     * @return View
      */
     public function index()
     {
@@ -47,13 +48,10 @@ class NotificationController extends Controller
     }
 
     /**
-     * Update the notification is reade or not.
+     * Mark notification as read and redirect to its route.
      *
      * @param  int  $id
-     * @return \Illuminate\View\View
-     *                               Returns a view for redirection if the notification has a route.//+
-     *                               Returns a back redirect if no route is associated with the notification.//+
-     *                               Returns a 404 error if the notification does not exist
+     * @return View
      */
     public function viewedNotifications($id)
     {
